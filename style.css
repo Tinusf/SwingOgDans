@@ -1,0 +1,15 @@
+* {
+	font-family: Georgia, Verdana;
+}
+body {
+	width: 75ch;
+	margin: auto;
+	background-color: #C4C4C4;
+}
+p, ul, ol {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+header {
+	font-size: 1.1em;
+}
