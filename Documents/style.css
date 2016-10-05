@@ -13,3 +13,8 @@ p, ul, ol {
 header {
 	font-size: 1.1em;
 }
+section {
+	border: 1px solid;
+	margin: 10px 10px 10px 0px;
+	padding: 10px 10px 10px 10px;
+}
