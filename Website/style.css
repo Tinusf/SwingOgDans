@@ -1,22 +1,35 @@
 * {
+	margin: 0;
+    padding: 0;
 	font-family: Georgia, Verdana;
 }
 body {
 	margin: auto;
+	font-size: 16px;
+	line-height: 1.5;
 }
 #cover {
-	position: relative;
-	left: calc(-50vw + 50%);
-	z-index: -1;
-	width: 100vw;
+	width: 100%;
+	z-index: -2;
+}
+#coverBox {
+	position: absolute;
+	background-color: #f4ecd7;
+	z-index: 1;
+	top:2%;
+}
+.coverText {
+	margin: 10% 25%;
+	line-height: 1.2;
+	text-align: center;
+	font-size: 3em;
 }
 #facebookFeed {
 	float: right;
 }
 #navbar {
-	margin-top: -4px;
+	margin-top: -6px;
 	list-style-type: none;
-    padding: 0;
     overflow: hidden;
     background-color: #47a1a7;
 }
@@ -34,14 +47,15 @@ body {
     background-color: #f4ecd7;
 }
 article {
-	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px black solid;
 }
 
 @media (max-width: 940px) {
 	article {
 	width: 95%;
-}
-    p {
+	} p {
     	color: red;
     }
 }
