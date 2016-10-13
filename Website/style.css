@@ -1,17 +1,21 @@
 * {
 	margin: 0;
-    padding: 0;
+  padding: 0;
 	font-family: Georgia, Verdana;
 }
 body {
-	margin: auto;
 	font-size: 16px;
+}
+p, article {
 	line-height: 1.5;
 }
+
+
+/* Cover og Navbar */
 #cover {
 	width: 100%;
-	z-index: -2;
 }
+/*
 #coverBox {
 	position: absolute;
 	background-color: #f4ecd7;
@@ -23,39 +27,85 @@ body {
 	line-height: 1.2;
 	text-align: center;
 	font-size: 3em;
+} */
+#navbarID {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3C9AA5;
+  margin-top:-7px;
 }
-#facebookFeed {
-	float: right;
-}
-#navbar {
-	margin-top: -6px;
-	list-style-type: none;
-    overflow: hidden;
-    background-color: #47a1a7;
-}
-#navbar li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px 16px;
-    text-decoration: none;
-}
-#navbar li {
+ul.navbarClass li {
 	float: left;
 }
-#navbar li a:hover {
-    background-color: #f4ecd7;
+ul.navbarClass li a {
+  display: inline-block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.4s;
 }
-article {
-	margin-left: auto;
-	margin-right: auto;
-	border: 1px black solid;
+ul.navbarClass li a:hover, #current {
+	background-color: #F3EBD7;
+}
+ul.navbarClass li.icon {
+	display: none;
+}
+#navbarMenuBtn {
+	font-size: 13px;
 }
 
-@media (max-width: 940px) {
-	article {
-	width: 95%;
-	} p {
-    	color: red;
-    }
+
+/* Større desktop vindu */
+@media only screen and (min-width : 940px){
+  #floatRight {
+  float: right;
+  margin-right: 15%;
+  }
+  #floatLeft {
+  margin-left: 15%;
+  float: left;
+  width: calc(70% - 540px);
+  }
+}
+
+/* telefon eller lite vindu*/
+@media only screen and (max-device-width : 940px), screen and (max-width : 940px) {
+  ul.navbarClass li:not(:first-child) {
+  	display: none;
+  }
+  ul.navbarClass li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.navbarClass.responsive {
+    position: relative;
+  }
+  ul.navbarClass.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbarClass.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbarClass.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  #floatLeft {
+  margin-left: 5%;
+  width: 90%;
+  }
+  #floatRight {
+  float: none;
+  margin-left: 5%;
+  }
+}
+
+/* bare telefon */
+@media only screen and (max-device-width : 940px){
+  *, #navbarMenuBtn {
+    font-size: 36px;
+  }
 }

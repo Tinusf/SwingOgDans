@@ -4,15 +4,16 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style.css">
 	<title>NTNUI Swing og Folkedans</title>
+	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
 </head>
 <body>
-	<a href="index"><img src="images/cover.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a> <!-- Endre index til / eller ekte linken senere. -->
-	<div id ="coverBox">
+	<a href="."><img src="images/cover.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>
+	<!--<div id ="coverBox">
 		<h1 class="coverText">NTNUI <br> Swing og <br> Folkedans</h1>
 	</div>
-
-	<ul id="navbar">
-		<li><a href="index">HJEM</a></li> <!-- Endre index til / eller ekte linken senere. -->
+	-->
+	<ul class="navbarClass" id="navbarID">
+		<li><a href="." id="current">HJEM</a></li>
 		<li><a href="treninger">TRENINGER</a></li>
 		<li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
 		<li><a href="musikk">MUSIKK</a></li>
@@ -20,17 +21,16 @@
 		<li><a href="kontakt">KONTAKT</a></li>
 		<li><a href="faq">FAQ</a></li>
 		<li><a href="english">ENGLISH</a></li>
+		<li class="icon">
+    		<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
 	</ul>
-	<article id="facebookFeed">
+	<article id="floatRight">
 		<h2>NYHETER</h2>
-		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTNUISwingFolkedans%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>	
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FNTNUISwingFolkedans%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="facebookFeed"></iframe>
 	</article>
-	<article>
-		<p>TEStestsetdsahjkladsjkløfjaklsdøfjaklsødfjkløasdfjklø asdf ajksdløf jaklsød fjklaøsdf jkløasd adfsjøkljøkljøkljøkløjkljøkljøkløjkløjkløjklø adfsjøkl adklsfj aøklsdfjajkls ødfjaklsdøf jaklsødfjakø lsdjfkølasdj fkløasdjk fløajsdkløfjaklsødfjkalsø djfkløasd jfkløasdjfklø asdjklfø j</p>
-		<!--
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>-->
+	<article id="floatLeft">
+	<h2>Velkommen</h2>
+		<p>Although you may not realize it, you are powerful. How should you navigate this enlightened stratosphere? Traveller, look within and recreate yourself. Nothing is impossible. By unveiling, we live. Today, science tells us that the essence of nature is potentiality.</p>
 	</article>
 	<script src="scripts/navbarMenu.js"></script>
 </body>
