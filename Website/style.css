@@ -15,19 +15,28 @@ p, article {
 #cover {
 	width: 100%;
 }
-/*
+
+
 #coverBox {
 	position: absolute;
 	background-color: #f4ecd7;
 	z-index: 1;
-	top:2%;
+	top:5%;
+  left:20%;
+  width: 60%;
+  border: 5px solid black;
+  outline: 15px solid #f4ecd7;
+
 }
 .coverText {
 	margin: 10% 25%;
 	line-height: 1.2;
 	text-align: center;
 	font-size: 3em;
-} */
+  color:black;
+}
+
+
 #navbarID {
   list-style-type: none;
   overflow: hidden;
@@ -107,5 +116,9 @@ ul.navbarClass li.icon {
 @media only screen and (max-device-width : 940px){
   *, #navbarMenuBtn {
     font-size: 36px;
+  }
+  #facebookFeed {
+    transform:scale(1.6);
+    margin:200px;
   }
 }
