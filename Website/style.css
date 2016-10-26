@@ -40,6 +40,92 @@ ul.navbarClass li.icon {
 	font-size: 13px;
 }
 
+/* FAQ - Sigve */
+#faqWrapper{
+  padding: 0 15% 10%;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+#faqID{
+  min-width: 100%;
+  list-style-type: none;
+  margin-top: 50px;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+#faqHeader{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#faqID .question{
+  color: #3C9AA5;
+  font-weight: bold;
+  margin-top: 2em;
+  position: relative;
+  width: 90%;
+}
+#faqID .answer{
+  display: none;
+  position: relative;
+  width: 70%;
+}
+#faqID hr{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #3C9AA5;
+  margin: 1em 0;
+  padding: 0; 
+}
+#faqID .pluss {
+  position: absolute;
+  right: -10%;
+  bottom: 0px;
+  color: #3C9AA5;
+  font-size: 42px;
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+#faqID .pluss:focus{
+  outline: none;
+}
+#faqID .pluss:hover{
+  color: #0D333F;
+}
+#faqID #a8 ul{
+  margin-left: 5%;
+  list-style-type: square;
+}
+
+#footerWrapper{
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+footer{
+  padding: 1.5% 22%;
+  background-color: #0D333F;
+  color: #3C9AA5;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer > ul > li{
+  float: left;
+  list-style-type: none;
+  padding: 0 2%;
+}
+
+
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
@@ -86,6 +172,11 @@ ul.navbarClass li.icon {
   #floatRight {
   float: none;
   margin-left: 5%;
+  }
+
+  /* FAQ - Sigve */
+   #faqWrapper{
+    padding: 0 10%; 
   }
 }
 
