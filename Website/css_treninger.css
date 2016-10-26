@@ -1,0 +1,62 @@
+* {
+	font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia", "Verdana";
+}
+p, article {
+	line-height: 1.5;
+}
+
+/* Cover og Navbar */
+#cover {
+	width: 100%;
+}
+
+/* Cover og Navbar */
+#cover {
+	width: 100%;
+}
+
+#navbarID {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3C9AA5;
+  margin-top:-7px;
+  margin-bottom: 20px;
+}
+ul.navbarClass li {
+	float: left;
+}
+ul.navbarClass li a {
+  display: inline-block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+ul.navbarClass li a:hover, #current {
+	background-color: #F3EBD7;
+}
+ul.navbarClass li.icon {
+	display: none;
+}
+#navbarMenuBtn {
+	font-size: 13px;
+}
+article {
+    display: inline-block;
+    padding: 14px 16px 2px ;
+    width: 25%; 
+    border: solid lightblue 1px;
+    
+}
+h3 {
+    font-size: 200%;
+    display: block;
+}
+#mazemap-container {
+        display: inline-block;
+			width: 500px;
+			height: 500px;
+		}
