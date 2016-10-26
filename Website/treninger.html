@@ -1,82 +1,96 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <Title>NTNUI Swing og Folkedans</Title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/css_treninger.css">
-    <link rel="icon" href="SwingOgDans/Website/images/logo.png" type="image/gif" sizes="32x32" />
-    <link rel="stylesheet" href="https://api.mazemap.com/js/v1.1.1/mazemap.min.css">
-    <script type='text/javascript' src='https://api.mazemap.com/js/v1.1.1/mazemap.min.js'></script>
-</head>
-<body>
-    <a href="."><img src="SwingOgDans/Website/images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>	
-<ul class="navbarClass" id="navbarID">
-    <li><a href="." id="current">HJEM</a></li>
-    <li><a href="treninger.html">TRENINGER</a></li>
-    <li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
-    <li><a href="musikk">MUSIKK</a></li>
-    <li><a href="om_oss">OM OSS</a></li>
-    <li><a href="kontakt">KONTAKT</a></li>
-    <li><a href="faq">FAQ</a></li>
-    <li><a href="english">ENGLISH</a></li>
-    <li class="icon">
-        <a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
-</ul>
-    <article id="onsdag">
-    <h3>Onsdag</h3>
-    <div id="tekstOnsdag">
-        <h5>20:15 - 22:00 Swing (Videregående)</h5>
-    
-        <p id="sted1">Sted: Idrettsbygget Gløshaugen, Armfeldtsalen</p>
-        <p>Krever SiT og NTNUI medlemsskap</p>
-        <p class="onsdag">Dette kurset er beregnet for de som har danset swing i minst ett år (to semester) hos oss. Kurset har fokus på avanserte turer og teknikk, med litt annet krydder, som f.eks. gutt med to jenter og hopp/løft. Om du er usikker på hvilket nivå du bør være på, eller lurer på noe annet: ikke nøl med å ta kontakt med en av instruktørene! Vi anbefaler å ha vært gjennom minst to semester med nybegynnerkurs før man blir med på videregåendepartiet, dette er viktig for å opprettholde nivået på dette kurset for alle deltagere, siden vi dessverre kun har kurs på to nivå.</p>
-    </div>
-    </article>
-    <article id="søndagSwing">
-    <h3>Søndag</h3>
-    <div id="tekst2">
-        <h5>18:30 - 20:00 Swing (Nybegynner) </h5>
-    
-        <p id="sted2">Sted: Idrettsbygget Gløshaugen, Aerobicsalen og Kjellersalen</p>
-        <p>Krever SiT og NTNUI medlemsskap</p>
-        <p>Nybegynnerkurset i swing passer for de som aldri har danset før og de som har danset mindre enn 1-2 år, men er også veldig lærerikt for alle andre. Vi starter med 1.5 timers instruksjon, og så er det fridans resten av kvelden. Det instrueres i 4-trinns-swing (den mest vanlige swing-typen i Norge). Vi holder helt basic introkurs de tre første gangene i hvert semester, etter disse er høst- og vårsemesterne forskjellige, slik at man lærer nye ting gjennom et helt år. Det vil si at hvis man kan prøve seg på videregående-partiet hvis føler man har kontroll etter to semester.</p>
-    </div>
-    </article>
-    <article id="SøndagFolkedans">
-    <h3>Søndag</h3>
-    <div id="tekst3">
-        <h5>20.00 - 22.00: Folkedans (Alle)</h5>
-    
-        <p id="sted3">Sted: Idrettsbygget Gløshaugen, Aerobicsalen</p>
-        <p>Krever SiT og NTNUI medlemsskap</p>
-        <p>Har du lyst til å lære deg norsk folkedans? Eller har du danset før, men savner noen å danse med? Alle er velkommne, uansett nivå!
-        Vi har hovedfokus på reinlender, vals, pols og halling, men i løpet av semesteret kan vi i tillegg komme innom springar, polka, tango og mye annet artig!
-        Vi legger vekt på å lære bort det å føre og å følge, som er essensielt i all pardans. Folkedanstreningene kan derfor også være et nyttig supplement for de som driver med andre danser. Vi reiser også gjerne sammen på dansekvelder i Trondheimsområdet og arrangerer felles turer til Rørosmartnan og Hilmarfestivalen.</p>
-    </div>
-    </article>
-    <article id="SøndagFridans">
-    <h3>Fridans Swing (Alle)</h3>
-    <div id="tekst4">
-        <h5>20.30 - 22.00</h5>
-        <p id="sted4">Idrettsbygget Gløshaugen, Aerobicsalen</p>
-        <p>Krever SiT og NTNUI medlemsskap</p>
-        <p>Fridans (man danser fritt med hvem man vil) for alle som vil være med. Kom og dans, og øv på det du lærte på forrige nybegynner- eller videregåendetrening!</p>
-    </div>
-    </article>
-    <div id="mazemap-container">
-    <script>
-        map = Maze.map('mazemap-container', { campuses: 'ntnu' }); 
-    </script>
-    </div>
-    
+    <head>
+        <Title>NTNUI Swing og Folkedans</Title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css_treninger.css">
+        <link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
+        <link rel="stylesheet" href="https://api.mazemap.com/js/v1.1.1/mazemap.min.css">
+        <script type='text/javascript' src='https://api.mazemap.com/js/v1.1.1/mazemap.min.js'></script>
+    </head>
+        <body>
+            <a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>	
+            <ul class="navbarClass" id="navbarID">
+                <li><a href="." id="current">HJEM</a></li>
+                <li><a href="treninger.html">TRENINGER</a></li>
+                <li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
+                <li><a href="musikk">MUSIKK</a></li>
+                <li><a href="om_oss">OM OSS</a></li>
+                <li><a href="kontakt">KONTAKT</a></li>
+                <li><a href="faq">FAQ</a></li>
+                <li><a href="english">ENGLISH</a></li>
+                <li class="icon">
+                <a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
+            </ul>
+            <div id="alleDager">
+                <article id="onsdag">
+                    <h3>Onsdag</h3>
+                    <div class="inner">
+                        <h5>20:15 - 22:00 Swing (Videregående)</h5>
 
-</body>
-<footer>
-    <ul>
-	    <li>addresse: ntnuveien4000</li>	
-        <li>epost:dansogswing@gmail.com</li>
-        <li>Websposjekt 2016</li>
-	</ul>  
-</footer>
-<script src="scripts/navbarMenu.js"></script>
+                        <p id="sted1">Sted: Idrettsbygget Gløshaugen, Armfeldtsalen</p>
+                        <p>Krever SiT og NTNUI medlemsskap</p>
+                        <p class="onsdag">
+                        Kurset er beregnet for de som har danset swing i minst ett år ( to semester) hos oss.
+                        <li>Fokuserer på avanserte turer og teknikk, med litt snadder! </li>
+                        <li>For de som føler de har mestret nybegynnerkurset og vil ha nye utfordringer!</li>
+                        <li>Usikker på hvilket nivå du bør danse på? <br>
+                        <b>Spør en av instruktørene, vi hjelper deg gjerne!</b></li>
+                        </p>
+                    </div>
+                </article>
+                <article id="søndagSwing">
+                    <h3>Søndag Swing</h3>
+                    <div class="inner">
+                        <h5>18:30 - 20:00 Swing (Nybegynner) </h5>
+
+                        <p id="sted2">Sted: Idrettsbygget Gløshaugen, Aerobicsalen og Kjellersalen</p>
+                        <p>Krever SiT og NTNUI medlemsskap</p>
+                        <p>
+                            <li>Nybegynnerkurset passer for deg som aldri har danset swing eller er nettopp startet </li>
+                            <li>Timene består av 1.5 timers intruksjon og resten fridans!</li>
+                            <li>Vi danser 4-trinns-swing (vanligste swingtypen i Norge)</li>
+                        Vi starter hvert semester med 3 basis introkurs, også vil det bli instruering i forskjellige stilarter resten av semesteret!
+                        Høst og vårsemesteret er forskjellige, sånn at du kan bli med videregående gruppen hvis du føler du har kontroll etter to semester!
+                        </p>
+                    </div>
+                </article>
+                <article id="SøndagFolkedans">
+                    <h3>Søndag Folkedans</h3>
+                    <div class="inner">
+                        <h5>20.00 - 22.00: Folkedans (Alle)</h5>
+
+                        <p id="sted3">Sted: Idrettsbygget Gløshaugen, Aerobicsalen</p>
+                        <p>Krever SiT og NTNUI medlemsskap</p>
+                        <p>Har du lyst til å lære deg norsk folkedans? Eller har du danset før, men savner noen å danse med? Alle er velkommne, uansett nivå!
+                        Vi har hovedfokus på reinlender, vals, pols og halling, men i løpet av semesteret kan vi i tillegg komme innom springar, polka, tango og mye annet artig!
+                        Vi legger vekt på å lære bort det å føre og å følge, som er essensielt i all pardans. Folkedanstreningene kan derfor også være et nyttig supplement for de som driver med andre danser. Vi reiser også gjerne sammen på dansekvelder i Trondheimsområdet og arrangerer felles turer til Rørosmartnan og Hilmarfestivalen.</p>
+                    </div>
+                </article>
+                <article id="SøndagFridans">
+                    <h3>Søndag Fridans Swing </h3>
+                    <div class="inner">
+                        <h5>20.30 - 22.00</h5>
+                        <p id="sted4">Idrettsbygget Gløshaugen, Aerobicsalen</p>
+                        <p>Krever SiT og NTNUI medlemsskap</p>
+                        <p>Fridans (man danser fritt med hvem man vil) for alle som vil være med. Kom og dans, og øv på det du lærte på forrige nybegynner- eller videregåendetrening!</p>
+                    </div>
+                </article>
+            </div>
+            <div id="mazemap-container">
+                <script>
+                    map = Maze.map('mazemap-container', { campuses: 'ntnu' }); 
+                </script>
+            </div>
+
+
+        </body>
+        <footer>
+            <ul>
+                <li>addresse: ntnuveien4000</li>	
+                <li>epost:dansogswing@gmail.com</li>
+                <li>Websposjekt 2016</li>
+            </ul>  
+        </footer>
+    <script src="scripts/navbarMenu.js"></script>
 </html>
