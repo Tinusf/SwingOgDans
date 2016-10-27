@@ -203,7 +203,7 @@ ul.navbarClass li.icon {
 
   /* FAQ - Sigve */
   #faqWrapper{
-    padding: 0 10%; 
+    padding: 0 10% 20%; 
   }
   #faqID > .question:nth-child(n+2):after {
     width: 120%;
@@ -211,6 +211,10 @@ ul.navbarClass li.icon {
   #faqID .pluss{
     right: -20%;
     bottom: 30%;
+  }
+  #faqID .answer{
+    width: 90%;
+  }
 }
 
 /* bare telefon */
@@ -221,5 +225,8 @@ ul.navbarClass li.icon {
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
+  }
+  #faqID .pluss{
+    font-size: 92px;
   }
 }
