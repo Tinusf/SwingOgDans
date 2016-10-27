@@ -46,6 +46,8 @@ ul.navbarClass li.icon {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  display: inline-block;
+  width: 70%;
 }
 #faqID{
   min-width: 100%;
@@ -73,15 +75,8 @@ ul.navbarClass li.icon {
   position: relative;
   width: 70%;
 }
-#faqID hr{
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #3C9AA5;
-  margin: 1em 0;
-  padding: 0; 
-}
-#faqID .pluss {
+
+#faqID .pluss{
   position: absolute;
   right: -10%;
   bottom: 0px;
@@ -101,16 +96,13 @@ ul.navbarClass li.icon {
   margin-left: 5%;
   list-style-type: square;
 }
-
 #footerWrapper{
   position: relative;
   min-height: 100%;
   overflow: hidden;
-  padding-bottom: 8%;
 }
-
-footer{
-  padding: 1.5% 22%;
+#footerWrapper > footer{
+  padding: 1.5% 0%;
   background-color: #0D333F;
   color: #3C9AA5;
   position: absolute;
@@ -119,11 +111,22 @@ footer{
   width: 100%;
   text-align: center;
 }
-
-footer > ul > li{
-  float: left;
+#footerWrapper > footer > ul > li{
+  display: inline;
   list-style-type: none;
   padding: 0 2%;
+  width: 100%;
+}
+#faqID > .question:nth-child(n+2):after {
+    content: "";
+    display: block;
+    width: 110%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3C9AA5;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 /* Om oss */
@@ -199,9 +202,15 @@ footer > ul > li{
   }
 
   /* FAQ - Sigve */
-   #faqWrapper{
+  #faqWrapper{
     padding: 0 10%; 
   }
+  #faqID > .question:nth-child(n+2):after {
+    width: 120%;
+  }
+  #faqID .pluss{
+    right: -20%;
+    bottom: 30%;
 }
 
 /* bare telefon */
