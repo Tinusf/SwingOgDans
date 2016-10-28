@@ -156,15 +156,16 @@ ul.navbarClass li.icon {
     width: 50%;
     float: left;
 }
-
+/* Kontakt oss */
 #split3Middle > div{
-    padding: 20px 0;
-    margin: 10px 0;
-    border: 2px solid #3C9AA5;
-  }
+  padding: 20px 0;
+  margin: 10px 0;
+  border: 2px solid #3C9AA5;
+}
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
+  /* hjem */
   #floatRight {
   float: right;
   margin-right: 15%;
@@ -174,6 +175,7 @@ ul.navbarClass li.icon {
   float: left;
   width: calc(70% - 540px);
   }
+  /* kontakt oss*/
   #split3Left {
   margin-left: 15%;
   float: left;
@@ -187,6 +189,7 @@ ul.navbarClass li.icon {
     float: left;
     text-align: center;
     border: 2px solid #3C9AA5;
+    word-wrap: break-word;
   }
 
   #split3Right {
@@ -269,9 +272,10 @@ ul.navbarClass li.icon {
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  *, #navbarMenuBtn {
+  p, article, #navbarMenuBtn {
     font-size: 36px;
   }
+
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
