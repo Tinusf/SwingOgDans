@@ -134,7 +134,7 @@ ul.navbarClass li.icon {
 
 /* Om oss */
 #content{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -156,7 +156,7 @@ ul.navbarClass li.icon {
 #personer {
     width: 45%;
     height: 100%;
-    margin: 0px 0px 600px 40px;
+    margin: 0px 0px 200px 40px;
     padding-bottom: 40px;
 }
 
