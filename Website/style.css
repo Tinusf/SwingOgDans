@@ -1,13 +1,15 @@
 * {
-	font-size: 16px;
   margin: 0;
   padding: 0;
   font-family: "Georgia", "Verdana";
 }
 p, article {
 	line-height: 1.5;
+  font-size: 16px;
 }
-
+a {
+  color: black;
+}
 /* Cover og Navbar */
 #cover {
 	width: 100%;
@@ -46,6 +48,8 @@ ul.navbarClass li.icon {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  display: inline-block;
+  width: 70%;
 }
 #faqID{
   min-width: 100%;
@@ -73,15 +77,8 @@ ul.navbarClass li.icon {
   position: relative;
   width: 70%;
 }
-#faqID hr{
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #3C9AA5;
-  margin: 1em 0;
-  padding: 0; 
-}
-#faqID .pluss {
+
+#faqID .pluss{
   position: absolute;
   right: -10%;
   bottom: 0px;
@@ -101,15 +98,14 @@ ul.navbarClass li.icon {
   margin-left: 5%;
   list-style-type: square;
 }
-
 #footerWrapper{
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  padding-bottom: 9%;
 }
-
-footer{
-  padding: 1.5% 22%;
+#footerWrapper > footer{
+  padding: 1.5% 0%;
   background-color: #0D333F;
   color: #3C9AA5;
   position: absolute;
@@ -118,14 +114,24 @@ footer{
   width: 100%;
   text-align: center;
 }
-
-footer > ul > li{
-  float: left;
+#footerWrapper > footer > ul > li{
+  display: inline;
   list-style-type: none;
   padding: 0 2%;
+  width: 100%;
+}
+#faqID > .question:nth-child(n+2):after {
+    content: "";
+    display: block;
+    width: 110%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3C9AA5;
+    margin: 1em 0;
+    padding: 0; 
 }
 
-<<<<<<< HEAD
 /* Om oss */
 #content{
     width: 80%;
@@ -192,6 +198,7 @@ footer > ul > li{
 .img:after {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
 }
+<<<<<<< HEAD
 
 .container {
     position: absolute;
@@ -268,9 +275,18 @@ h2:before, h2:after {
 =======
 >>>>>>> 03947221a2057d7eeb91f1e7d0b3ddd5547abd62
 
+=======
+/* Kontakt oss */
+#split3Middle > div{
+  padding: 20px 0;
+  margin: 10px 0;
+  border: 2px solid #3C9AA5;
+}
+>>>>>>> ae7e7386a61af12c174fe5fb1434c91e3416bb54
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
+  /* hjem */
   #floatRight {
   float: right;
   margin-right: 15%;
@@ -279,6 +295,28 @@ h2:before, h2:after {
   margin-left: 15%;
   float: left;
   width: calc(70% - 540px);
+  }
+  /* kontakt oss*/
+  #split3Left {
+  margin-left: 15%;
+  float: left;
+  width: 20%;
+  }
+
+  #split3Middle {
+    padding: 3%;
+    margin-left: 2%;
+    width: 20%;
+    float: left;
+    text-align: center;
+    border: 2px solid #3C9AA5;
+    word-wrap: break-word;
+  }
+
+  #split3Right {
+    width: 20%;
+    float: right;
+    margin-right: 15%;
   }
 }
 
@@ -317,18 +355,53 @@ h2:before, h2:after {
   }
 
   /* FAQ - Sigve */
-   #faqWrapper{
-    padding: 0 10%; 
+  #faqWrapper{
+    padding: 0 10% 20%; 
+  }
+  #faqID > .question:nth-child(n+2):after {
+    width: 120%;
+  }
+  #faqID .pluss{
+    right: -20%;
+    bottom: 30%;
+  }
+  #faqID .answer{
+    width: 90%;
+  }
+
+  #split3Left {
+  margin-left: 5%;
+  float: none;
+  width: 90%;
+  }
+
+  #split3Middle {
+    margin: 5%;
+    padding: 5%;
+    width: 80%;
+    float: none;
+    text-align: center;
+    border: 2px solid #3C9AA5;
+  }
+
+  #split3Right {
+    width: 90%;
+    float: none;
+    margin-left: 5%;
   }
 }
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  *, #navbarMenuBtn {
+  p, article, #navbarMenuBtn {
     font-size: 36px;
   }
+
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
+  }
+  #faqID .pluss{
+    font-size: 92px;
   }
 }
