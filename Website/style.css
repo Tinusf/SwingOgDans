@@ -160,6 +160,8 @@ ul.navbarClass li.icon {
     padding-bottom: 40px;
 }
 
+
+
 .person {
     position: relative;
     width: 150px;
@@ -194,11 +196,9 @@ ul.navbarClass li.icon {
 .img:before {
     background: rgba(60, 154, 165, 0.35);
 }
-
 .img:after {
     background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
 }
-<<<<<<< HEAD
 
 .container {
     position: absolute;
@@ -226,9 +226,17 @@ h2:before, h2:after {
 .person:hover .container {
     opacity: 1;
 }
-
 .person:hover .container {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.h2{
+    font-size: 20px;
+}
+
+.desc{
+    margin-top: 5px;
+    font-size: 12px;
 }
 
      /*popout box*/
