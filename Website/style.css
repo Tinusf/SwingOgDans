@@ -280,17 +280,12 @@ h2:before, h2:after {
     margin: 30px auto;
 }
 
-=======
->>>>>>> 03947221a2057d7eeb91f1e7d0b3ddd5547abd62
-
-=======
 /* Kontakt oss */
 #split3Middle > div{
   padding: 20px 0;
   margin: 10px 0;
   border: 2px solid #3C9AA5;
 }
->>>>>>> ae7e7386a61af12c174fe5fb1434c91e3416bb54
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
