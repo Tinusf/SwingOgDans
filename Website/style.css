@@ -373,9 +373,9 @@ h2:before, h2:after {
   }
 
   #split3Left {
-  margin-left: 5%;
-  float: none;
-  width: 90%;
+    margin-left: 5%;
+    float: none;
+    width: 90%;
   }
 
   #split3Middle {
@@ -396,14 +396,23 @@ h2:before, h2:after {
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  p, article, #navbarMenuBtn {
+  p, article, #navbarMenuBtn, .navbarClass {
     font-size: 36px;
+  }
+
+  #split3Middle > div {
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 28px;
   }
 
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
   }
+
   #faqID .pluss{
     font-size: 92px;
   }
