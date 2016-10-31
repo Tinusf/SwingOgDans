@@ -1,13 +1,15 @@
 * {
-	font-size: 16px;
   margin: 0;
   padding: 0;
   font-family: "Georgia", "Verdana";
 }
 p, article {
 	line-height: 1.5;
+  font-size: 16px;
 }
-
+a {
+  color: black;
+}
 /* Cover og Navbar */
 #cover {
 	width: 100%;
@@ -46,6 +48,8 @@ ul.navbarClass li.icon {
   position: relative;
   min-height: 100%;
   overflow: hidden;
+  display: inline-block;
+  width: 70%;
 }
 #faqID{
   min-width: 100%;
@@ -73,15 +77,8 @@ ul.navbarClass li.icon {
   position: relative;
   width: 70%;
 }
-#faqID hr{
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #3C9AA5;
-  margin: 1em 0;
-  padding: 0; 
-}
-#faqID .pluss {
+
+#faqID .pluss{
   position: absolute;
   right: -10%;
   bottom: 0px;
@@ -101,16 +98,14 @@ ul.navbarClass li.icon {
   margin-left: 5%;
   list-style-type: square;
 }
-
 #footerWrapper{
   position: relative;
   min-height: 100%;
   overflow: hidden;
-  padding-bottom: 8%;
+  padding-bottom: 9%;
 }
-
-footer{
-  padding: 1.5% 22%;
+#footerWrapper > footer{
+  padding: 1.5% 0%;
   background-color: #0D333F;
   color: #3C9AA5;
   position: absolute;
@@ -119,16 +114,27 @@ footer{
   width: 100%;
   text-align: center;
 }
-
-footer > ul > li{
-  float: left;
+#footerWrapper > footer > ul > li{
+  display: inline;
   list-style-type: none;
   padding: 0 2%;
+  width: 100%;
+}
+#faqID > .question:nth-child(n+2):after {
+    content: "";
+    display: block;
+    width: 110%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3C9AA5;
+    margin: 1em 0;
+    padding: 0; 
 }
 
 /* Om oss */
 #content{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -138,21 +144,152 @@ footer > ul > li{
     font-size: 30px;
     font-weight: bold;
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 #info{
-    width: 40%;
+    width: 35%;
     float: right;
+    margin: 10px 80px 100px 0px;
 }
 
-#personer{
-    width: 50%;
+#personer {
+    width: 45%;
+    height: 100%;
+    margin: 0px 0px 200px 40px;
+    padding-bottom: 40px;
+}
+
+
+
+.person {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: all 0.5s;
     float: left;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    border-radius: 50%;
+}
+                
+.img:before, .img:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.img:before {
+    background: rgba(60, 154, 165, 0.35);
+}
+.img:after {
+    background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.5s;
+}
+
+h2:before, h2:after {
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0.75em;
+    height: 0.03em;
+    vertical-align: middle;
+    transition: all 0.3s;
+}
+
+.person:hover .img:before,
+.person:hover .img:after,
+.person:hover .container {
+    opacity: 1;
+}
+.person:hover .container {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.h2{
+    font-size: 20px;
+}
+
+.desc{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+     /*popout box*/
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-box {
+    background-color: white;
+    border: 6px solid #3C9AA5;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+}
+
+#close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9 {
+    color: #3C9AA5;
+    float: right;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0px 10px 50px 50px;
+}
+
+#close1:hover, #close1:focus, #close2:hover, #close2:focus, #close3:hover, #close3:focus, #close4:hover, #close4:focus, #close5:hover, #close5:focus, #close6:hover, #close6:focus, #close7:hover, #close7:focus, #close8:hover, #close8:focus, #close9:hover, #close9:focus {
+    color: #0D333F;
+    text-decoration: none;
+    cursor: pointer;
+}
+                
+.modal-content{
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* Kontakt oss */
+#split3Middle > div{
+  padding: 20px 0;
+  margin: 10px 0;
+  border: 2px solid #3C9AA5;
 }
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
+  /* hjem */
   #floatRight {
   float: right;
   margin-right: 15%;
@@ -161,6 +298,28 @@ footer > ul > li{
   margin-left: 15%;
   float: left;
   width: calc(70% - 540px);
+  }
+  /* kontakt oss*/
+  #split3Left {
+  margin-left: 15%;
+  float: left;
+  width: 20%;
+  }
+
+  #split3Middle {
+    padding: 3%;
+    margin-left: 2%;
+    width: 20%;
+    float: left;
+    text-align: center;
+    border: 2px solid #3C9AA5;
+    word-wrap: break-word;
+  }
+
+  #split3Right {
+    width: 20%;
+    float: right;
+    margin-right: 15%;
   }
 }
 
@@ -199,18 +358,62 @@ footer > ul > li{
   }
 
   /* FAQ - Sigve */
-   #faqWrapper{
-    padding: 0 10%; 
+  #faqWrapper{
+    padding: 0 10% 20%; 
+  }
+  #faqID > .question:nth-child(n+2):after {
+    width: 120%;
+  }
+  #faqID .pluss{
+    right: -20%;
+    bottom: 30%;
+  }
+  #faqID .answer{
+    width: 90%;
+  }
+
+  #split3Left {
+    margin-left: 5%;
+    float: none;
+    width: 90%;
+  }
+
+  #split3Middle {
+    margin: 5%;
+    padding: 5%;
+    width: 80%;
+    float: none;
+    text-align: center;
+    border: 2px solid #3C9AA5;
+  }
+
+  #split3Right {
+    width: 90%;
+    float: none;
+    margin-left: 5%;
   }
 }
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  *, #navbarMenuBtn {
+  p, article, #navbarMenuBtn, .navbarClass {
     font-size: 36px;
   }
+
+  #split3Middle > div {
+    font-size: 40px;
+  }
+
+  footer {
+    font-size: 28px;
+  }
+
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
+  }
+
+  #faqID .pluss{
+    font-size: 92px;
   }
 }
