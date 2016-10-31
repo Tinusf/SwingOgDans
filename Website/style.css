@@ -417,3 +417,38 @@ h2:before, h2:after {
     font-size: 92px;
   }
 }
+/* Eksterne kurs */
+.box {
+    margin:auto;
+    text-align: center;
+    padding-top: 40px;
+    width: 40%;
+    height: 65px;
+    border: 4px dashed lightblue;
+    float:left;
+    
+}
+#eksternWrapper {
+    margin: auto;
+    max-width: 70%;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+#kurs1 {
+    margin-left: 50px;
+    margin-right: 25px;
+    float:left;
+}
+#boxes {
+    width:70%;
+    margin:auto;
+}
+#tekst1, p {
+    margin: auto;
+    width: 70%;
+    height: 275px;
+    padding-top: 20px
+}
+/* slutt eksterne kurs */
