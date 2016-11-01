@@ -321,6 +321,9 @@ h2:before, h2:after {
     float: right;
     margin-right: 15%;
   }
+  #treningInfo1 {
+    margin-left:15%;
+  }
 }
 
 /* telefon eller lite vindu*/
@@ -416,6 +419,9 @@ h2:before, h2:after {
     transform:scale(1.8);
     margin: 200px;
   }
+  #treningInfo1 {
+    margin-left:1%;
+  }
 }
 /* Eksterne kurs */
 .box {
@@ -462,7 +468,6 @@ h1 {
 /* treninger tinus forsøk */
 #treningInfo1 {
   float:left;
-  margin-left:15%;
 }
 #treningList {
   margin: 0 15%;
