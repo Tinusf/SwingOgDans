@@ -488,3 +488,35 @@ h1 {
   float: left;
   margin: 2%; 
 }
+
+
+/* treninger tinus forsøk */
+#treningInfo1 {
+  clear: left;
+  margin-left: 15%;
+  float:left;
+}
+
+#treningInfo2 {
+ float: left;
+ margin-left: 2%;
+ margin-bottom: 2%;
+}
+#treningList {
+  margin: 0 15%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3C9AA5;
+}
+#treningList li {
+  float: left;
+  margin: 2%; 
+}
+#treningList li a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+#treningList li a:active {
+  color:red;
+}
