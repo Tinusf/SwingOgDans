@@ -396,7 +396,7 @@ h2:before, h2:after {
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  p, article, #navbarMenuBtn, .navbarClass {
+  p, article, #navbarMenuBtn, .navbarClass, li {
     font-size: 36px;
   }
 
