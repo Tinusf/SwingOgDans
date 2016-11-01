@@ -1,1 +1,104 @@
-f
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<title>NTNUI Swing og Folkedans</title>
+	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
+</head>
+
+<body>
+	<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>
+	<ul class="navbarClass" id="navbarID">
+		<li><a href="." id="current">HJEM</a></li>
+		<li><a href="treninger">TRENINGER</a></li>
+		<li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
+		<li><a href="musikk">MUSIKK</a></li>
+		<li><a href="om_oss">OM OSS</a></li>
+		<li><a href="kontakt">KONTAKT</a></li>
+		<li><a href="faq">FAQ</a></li>
+		<li><a href="english">ENGLISH</a></li>
+		<li class="icon">
+    		<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
+	</ul>
+	<div id="footerWrapper">	
+	<div id="faqWrapper">
+	<ul  id ="faqID">
+		<li id="faqHeader">FAQ</li>
+		<li class="question">Do I need a partner in order to participate?                   
+			<button class="pluss" id="b1" onclick="textClick('a1','b1')">+</button>
+		</li>
+		 <li class="answer" id="a1">
+			Answer: No. We’ll constantly change partners during the instructions, so everyone gets to dance as much as possible with as many as possible. 
+		</li> 
+
+		<li class="question">I wish to stick to a specific partner. Is this allowed?                   
+			<button class="pluss" id="b2" onclick="textClick('a2','b2')">+</button>
+		</li>
+		 <li class="answer" id="a2">
+			Answer: If you and your partner really only wish to dance with each other, we’ll allow it. But we recommend that you follow our arrangment where you constantly change partners. This is better socially and will make you a better dancer.
+		</li> 
+
+		<li class="question">What is the price for attending?                   
+			<button class="pluss" id="b3" onclick="textClick('a3','b3')">+</button>
+		</li>
+		 <li class="answer" id="a3">
+			Answer: We charge no fee. The only requirement is that you’re a member of NTNUI. Since the lessons are held inside the SiT training centre, you also need to have access to the building, either through a membership or by purchasing a day ticket.
+		</li> 
+
+		<li class="question">What clothes are recommended?                   
+			<button class="pluss" id="b4" onclick="textClick('a4','b4')">+</button>
+		</li>
+		 <li class="answer" id="a4">
+			Answer: When dancing you’ll be relatively close to other persons, and you will be sweating. Thus it important that you use clean clothes that cover your shoulders, reducing the chance of  bothering your partner by smelling bad. Most people use clean work out clothes.
+
+			As for girls that wish to dance in skirts or dresses, we highly recommend that you use shorts/tights/pantyhoses to cover underneath. Otherwise you might end up showing off more than you intended.
+		</li> 
+
+		<li class="question">What kind of shoes are recommended?                  
+			<button class="pluss" id="b5" onclick="textClick('a5','b5')">+</button>
+		</li>
+		 <li class="answer" id="a5">
+			Answer: Many simply uses normal gym shoes, but it is recommended that you use shoes that are smooth underneath. If you’re planning on dancing alot, then you should get special dance shoes were the soles are made specifically for dancing. This will reduce the chance of injuring your knee and will make it easier to rotate.
+
+			You can buy dance shoes at Aalberg Skoservice (Fjærgata 3, 7042 Trondheim) or on the internet.
+		</li> 
+
+		<li class="question">Do I need to register for the course?               
+			<button class="pluss" id="b6" onclick="textClick('a6','b6')">+</button>
+		</li>
+		 <li class="answer" id="a6">
+			Answer: No, you can just show up. 
+		</li> 
+
+		<li class="question">Do I need to be able to dance before I attend the beginner course?                   
+			<button class="pluss" id="b7" onclick="textClick('a7','b7')">+</button>
+		</li>
+		 <li class="answer" id="a7">
+			Answer: No. The course takes into account that most have never danced before. 
+		</li> 
+
+		<li class="question">What language will be used during instructions?                   
+
+			<a href="#b8"><button class="pluss" id="b8" onclick="textClick('a8','b8')">+</button></a>
+
+		 <li class="answer" id="a8">
+			Answer: The instructions will be held in Norwegian, due to the large number of Norwegian participants . But if you’re having trouble understanding something, do not be afraid to ask a question in English.
+
+			In addition, if you’re having trouble following the instructions because of language, most instructors will be happy to help after instructions (during social dancing). Whether you require explaination or demonstration.
+		</li> 
+	</ul>
+	</div>
+	<footer>
+		<ul>
+			<li>addresse: ntnuveien4000</li>	
+			<li>epost:dansogswing@gmail.com</li>
+			<li>Websposjekt 2016</li>
+		</ul>  
+	</footer>
+	</div>
+
+	<script src="scripts/textClick.js"></script>
+	<script src="scripts/navbarMenu.js"></script>
+</body>
+</html>
