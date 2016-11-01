@@ -467,13 +467,16 @@ h1 {
 
 /* treninger tinus forsøk */
 #treningInfo1 {
-  float:left;
-  margin-top: 2%;
-  margin-bottom: 2%;
+    clear: left;
+    margin-left: 15%;
+    margin-top:2%;
+    float:left;
 }
 #treningInfo2 {
-  margin-top: 2%;
-  margin-bottom: 2%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top:2%;
 }
 #treningList {
   margin: 0 15%;
@@ -496,4 +499,7 @@ h1 {
 #treningsTekst {
   padding: 5%;
   border: #3C9AA5 3px solid;
+}
+#floatRight {
+    margin-top: 2%;
 }
