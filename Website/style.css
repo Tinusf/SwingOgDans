@@ -405,7 +405,11 @@ h2:before, h2:after {
   }
 
   footer {
-    font-size: 28px;
+    font-size: 36px;
+  }
+
+  #footerWrapper {
+    padding-bottom: 15%;
   }
 
   #facebookFeed {
