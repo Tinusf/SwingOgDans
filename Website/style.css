@@ -396,7 +396,11 @@ h2:before, h2:after {
 
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
+<<<<<<< HEAD
   p, article, #navbarMenuBtn, .navbarClass, li {
+=======
+  p, article, #navbarMenuBtn, .navbarClass, li, footer {
+>>>>>>> 4f79eb25c9c20dd6a4dd077c7551956cd27e6877
     font-size: 36px;
   }
 
@@ -404,8 +408,13 @@ h2:before, h2:after {
     font-size: 40px;
   }
 
+<<<<<<< HEAD
   footer {
     font-size: 36px;
+=======
+  #close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9, #faqID .pluss {
+    font-size: 80px;
+>>>>>>> 4f79eb25c9c20dd6a4dd077c7551956cd27e6877
   }
 
   #footerWrapper {
@@ -415,10 +424,6 @@ h2:before, h2:after {
   #facebookFeed {
     transform:scale(1.8);
     margin: 200px;
-  }
-
-  #faqID .pluss{
-    font-size: 92px;
   }
 }
 /* Eksterne kurs */
