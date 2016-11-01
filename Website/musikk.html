@@ -6,7 +6,6 @@
 	<title>NTNUI Swing og Folkedans</title>
 	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
 </head>
-
 <body>
 	<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>
 	<ul class="navbarClass" id="navbarID">
@@ -21,76 +20,26 @@
 		<li class="icon">
     		<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
 	</ul>
-	<div class="slideshow-container">
-	  <div class="mySlides fade">
-	    <div class="numbertext">1 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing - 110</div>
-	  </div>
 
-	  <div class="mySlides fade">
-	    <div class="numbertext">2 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 111-120</div>
-	  </div>
+	<button id="musicPrev"><-</button>
 
-	  <div class="mySlides fade">
-	    <div class="numbertext">3 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 121-130</div>
-	  </div>
-
-	  <div class="mySlides fade">
-	    <div class="numbertext">4 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:7KQNQyDeMzh9IApGLInOM4" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 131-140</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">5 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 141-150</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">6 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:4j46yi8Ah1NUPgtdS9DXY8" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 151-160</div>
-	  </div>
-	  <div class="mySlides fade">
-	   	<div class="numbertext">7 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:4pLZHBAj0aSGOSLcSaPGJv" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 161-170</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">8 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:0doGJF34mnfeu99orScola" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 171-180</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">9 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1MdzdNePTzybKbsCuZnDFW" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 181-190</div>
-	  </div>
-	  <div class="mySlides fade">
-	   	<div class="numbertext">10 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:4O4SRDt3DIcrlm40ddEbxj" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing 191-200</div>
-	  </div>
-	  <div class="mySlides fade">
-	   	<div class="numbertext">11 / 11</div>
-	    <iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:5MJCuU8WpPqAiD0ujhuUdB" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-	    <div class="text">Swing >200</div>
-	  </div>
-
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	<div id = musicBox1>
+	<p id="musicInfo1"> test</p>
+	<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1MdzdNePTzybKbsCuZnDFW" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame1"></iframe>
 	</div>
-	<br>
 
-	<div style="text-align:center">
-	  <span class="dot" onclick="currentSlide(1)"></span> 
-	  <span class="dot" onclick="currentSlide(2)"></span> 
-	  <span class="dot" onclick="currentSlide(3)"></span> 
+	<div id = musicBox2>
+	<p id="musicInfo2"> test</p>
+	<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:4O4SRDt3DIcrlm40ddEbxj" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame2"></iframe>
 	</div>
+
+	<div id = musicBox3>
+	<p id="musicInfo3"> test</p>
+	<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:5MJCuU8WpPqAiD0ujhuUdB" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame3"></iframe>
+	</div>
+
+	<button id="musicNext">-></button>
+
 
 	<script src="scripts/musicArrow.js"></script>
 	<script src="scripts/navbarMenu.js"></script>
