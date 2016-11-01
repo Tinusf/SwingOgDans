@@ -454,6 +454,8 @@ h1 {
 /* slutt eksterne kurs */
 #Treninger {
     padding: 0.01em 16px;
+    position: absolute;
+    margin: auto;
 }
 .tablink {
     float:left;
@@ -465,8 +467,10 @@ h1 {
 .borderActive {
     color:red;
 }
-.conteinerInfo {
-    display: grid;
-    width: 47.6%
-    
+#onsdagSwingGammel, #søndagSwingNy, #søndagFolkedans, #søndagFridans {
+    display: block;
+    width: 47.6%;
+    height: 300px;
+    position: relative;
+    margin: inherit;
 }
