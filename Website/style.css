@@ -3,6 +3,12 @@
   padding: 0;
   font-family: "Georgia", "Verdana";
 }
+h1 {
+  text-align: center;
+}
+html, body {
+  height: 100%;
+}
 p, article {
 	line-height: 1.5;
   font-size: 16px;
@@ -102,19 +108,17 @@ ul.navbarClass li.icon {
   position: relative;
   min-height: 100%;
   overflow: hidden;
-  padding-bottom: 9%;
+  margin-bottom: 35px;
 }
-#footerWrapper > footer{
-  padding: 1.5% 0%;
+footer{
+  height: 35px; 
+  padding: 2% 0;
   background-color: #0D333F;
   color: #3C9AA5;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
   width: 100%;
   text-align: center;
 }
-#footerWrapper > footer > ul > li{
+footer > ul > li{
   display: inline;
   list-style-type: none;
   padding: 0 2%;
@@ -321,6 +325,22 @@ h2:before, h2:after {
     float: right;
     margin-right: 15%;
   }
+  #treningInfo1 {
+    margin-left:15%;
+  }
+  #kurs1 {
+  margin-left: 5%;
+  float:left;
+  margin-right: 2%;
+  }
+  #kurs2 {
+    margin-right: 5%;
+    float:left;
+    margin-left: 2%;
+  }
+  #mazeMapIframe {
+  margin-top: 5%;
+  }
 }
 
 /* telefon eller lite vindu*/
@@ -392,8 +412,18 @@ h2:before, h2:after {
     float: none;
     margin-left: 5%;
   }
+  #eksternTittel {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size-adjust: auto;
+  }
+  #kurs1, #kurs2 {
+    margin-left: 20%;
+    margin-right: 0;
+    float: none;
+    margin-bottom: 2%;
+  }
 }
-
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
   p, article, #navbarMenuBtn, .navbarClass, li, footer {
@@ -408,78 +438,39 @@ h2:before, h2:after {
     font-size: 80px;
   }
 
-  #footerWrapper {
-    padding-bottom: 15%;
-  }
-
-  #facebookFeed {
+  #facebookFeed, #mazeMapIframe {
     transform:scale(1.8);
     margin: 200px;
   }
+  #treningInfo1 {
+    margin-left:1%;
+  }
+  #footerWrapper{
+  margin-bottom: 100px;
+  }
+  footer{
+    height: 100px; 
+  }
 }
 /* Eksterne kurs */
-.box {
-    margin:auto;
+#kurs1, #kurs2 {
     text-align: center;
-    padding-top: 40px;
+    padding: 2% 0;
     width: 40%;
-    height: 65px;
-    border: 4px dashed lightblue;
-    float:left;
-    
+    height: 20%;
+    border: 4px dashed lightblue; 
 }
-#eksternWrapper {
-    margin: auto;
-    max-width: 70%;
-}
-h1 {
-    text-align: center;
-    padding: 20px;
-}
-#kurs1 {
-    margin-left: 50px;
-    margin-right: 25px;
-    float:left;
+
+#eksternTittel {
+  text-align: center;
+  padding: 20px;
 }
 #boxes {
-    width:70%;
-    margin:auto;
+    padding-top: 20px;
 }
-.tekst1 {
-    margin: auto;
-    width: 70%;
-    height: 275px;
-    padding-top: 20px
-}
-/* slutt eksterne kurs */
-#Treninger {
-    padding: 0.01em 16px;
-    position: absolute;
-    margin: auto;
-}
-.tablink {
-    float:left;
-    width: 10%;
-    padding:8px 16px;
-    border-bottom: 6px solid lightblue;
-    border-right: 1px solid lightblue;
-}
-.borderActive {
-    color:red;
-}
-
-#onsdagSwingGammel, #søndagSwingNy, #søndagFolkedans, #søndagFridans {
-    display: block;
-    width: 47.6%;
-    height: 300px;
-    position: relative;
-    margin: inherit;
-}
-
-.conteinerInfo {
-    display: grid;
-    width: 47.6%
-    
+#tekst1 {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /*Musikk */
@@ -532,5 +523,40 @@ h1 {
 #musicInfo1, #musicInfo2, #musicInfo3{
   font-size: 18px;
   font-family: georgia,verdana;
+}
+
+#treningInfo1 {
+    float:left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#treningInfo2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#treningList {
+  margin: 0 15%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #3C9AA5;
+  text-align: center;
+}
+#treningList li {
+  float: left;
+  margin: 2%; 
+}
+#treningList li:first-child {
+  float: none;
+}
+#treningList li a{
+  text-align: center;
+  text-decoration: none;
+}
+#treningList li a:active {
+  color:red;
+}
+#treningsTekst {
+  padding: 5%;
+  border: #3C9AA5 3px solid;
 }
 
