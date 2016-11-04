@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Georgia", "Verdana";
 }
+html, body {
+  height: 80%;
+}
 p, article {
 	line-height: 1.5;
   font-size: 16px;
