@@ -473,7 +473,7 @@ h2:before, h2:after {
     margin-right: 15%;
 }
 
-/*Musikk */
+/*Musikk*/
 
 #musicBox1, #musicBox2, #musicBox3 {
   float: left;
@@ -483,20 +483,17 @@ h2:before, h2:after {
 #musicBox1{
   padding: 2%;
   margin-left: 10%;
-  width: 20%;
 }
 
 #musicBox2{
   padding: 2%;
-  margin-left: 2%;
-  width: 20%;
+  margin-left: 5%;
 }
 
 #musicBox3{
   padding: 2%;
-  margin-right: 10%;
-  width: 20%;
-  float:right;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #musicPrev, #musicNext{
@@ -513,7 +510,8 @@ h2:before, h2:after {
 }
 
 #musicPrev{
-  float:left;
+  position:absolute;
+  margin-top: 300px;
 }
 
 #musicNext{
@@ -524,6 +522,16 @@ h2:before, h2:after {
   font-size: 18px;
   font-family: georgia,verdana;
 }
+
+/* musikk liten skjerm */
+@media only screen and (max-device-width : 940px), screen and (max-width : 940px) {
+  #musicBox1{
+  padding: 2%;
+  margin-left: 5%;
+  }
+}
+
+/*TRENING*/
 
 #treningInfo1 {
     float:left;
