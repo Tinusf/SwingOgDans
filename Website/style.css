@@ -334,6 +334,9 @@ h2:before, h2:after {
     float:left;
     margin-left: 2%;
   }
+  #mazeMapIframe {
+  margin-top: 5%;
+  }
 }
 
 /* telefon eller lite vindu*/
@@ -473,22 +476,20 @@ h2:before, h2:after {
 }
 
 #treningInfo1 {
-    clear: left;
-    margin-left: 15%;
-    margin-top:2%;
     float:left;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 #treningInfo2 {
-    float: left;
-    margin-left: 2%;
+    margin-top: 2%;
     margin-bottom: 2%;
-    margin-top:2%;
 }
 #treningList {
   margin: 0 15%;
   list-style-type: none;
   overflow: hidden;
   background-color: #3C9AA5;
+  text-align: center;
 }
 #treningList li {
   float: left;
@@ -505,7 +506,4 @@ h2:before, h2:after {
 #treningsTekst {
   padding: 5%;
   border: #3C9AA5 3px solid;
-}
-#mazeMapIframe {
-  margin-top: 5%;
 }
