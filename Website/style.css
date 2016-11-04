@@ -4,7 +4,7 @@
   font-family: "Georgia", "Verdana";
 }
 html, body {
-  height: 80%;
+  height: 100%;
 }
 p, article {
 	line-height: 1.5;
@@ -105,19 +105,17 @@ ul.navbarClass li.icon {
   position: relative;
   min-height: 100%;
   overflow: hidden;
-  padding-bottom: 9%;
+  margin-bottom: 35px;
 }
-#footerWrapper > footer{
-  padding: 1.5% 0%;
+footer{
+  height: 35px; 
+  padding: 2% 0;
   background-color: #0D333F;
   color: #3C9AA5;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
   width: 100%;
   text-align: center;
 }
-#footerWrapper > footer > ul > li{
+footer > ul > li{
   display: inline;
   list-style-type: none;
   padding: 0 2%;
@@ -437,16 +435,18 @@ h2:before, h2:after {
     font-size: 80px;
   }
 
-  #footerWrapper {
-    padding-bottom: 15%;
-  }
-
   #facebookFeed, #mazeMapIframe {
     transform:scale(1.8);
     margin: 200px;
   }
   #treningInfo1 {
     margin-left:1%;
+  }
+  #footerWrapper{
+  margin-bottom: 100px;
+  }
+  footer{
+    height: 100px; 
   }
 }
 /* Eksterne kurs */
@@ -465,10 +465,9 @@ h2:before, h2:after {
 #boxes {
     padding-top: 20px;
 }
-.tekst1 {
-    margin: auto;
-    width: 70%;
-    height: 100%;
+#tekst1 {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /*Musikk */
