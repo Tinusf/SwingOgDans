@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Georgia", "Verdana";
 }
+h1 {
+  text-align: center;
+}
 html, body {
   height: 100%;
 }
@@ -497,8 +500,10 @@ h2:before, h2:after {
   float: left;
   margin: 2%; 
 }
+#treningList li:first-child {
+  float: none;
+}
 #treningList li a{
-  display: block;
   text-align: center;
   text-decoration: none;
 }
