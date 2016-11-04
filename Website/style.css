@@ -324,6 +324,16 @@ h2:before, h2:after {
   #treningInfo1 {
     margin-left:15%;
   }
+  #kurs1 {
+  margin-left: 5%;
+  float:left;
+  margin-right: 2%;
+  }
+  #kurs2 {
+    margin-right: 5%;
+    float:left;
+    margin-left: 2%;
+  }
 }
 
 /* telefon eller lite vindu*/
@@ -395,21 +405,17 @@ h2:before, h2:after {
     float: none;
     margin-left: 5%;
   }
-
-    #eksternWrapper {
-        width: 100%;
-    }
-    #eksternTittel {
-        text-align: center;
-        padding-bottom: 10px;
-        font-size-adjust: auto;
-    }
-    #kurs1, #kurs2 {
-        display: none;
-    }
-    .tekst1 {
-        width: 100%;
-    }
+  #eksternTittel {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size-adjust: auto;
+  }
+  #kurs1, #kurs2 {
+    margin-left: 20%;
+    margin-right: 0;
+    float: none;
+    margin-bottom: 2%;
+  }
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
@@ -438,35 +444,19 @@ h2:before, h2:after {
   }
 }
 /* Eksterne kurs */
-.box {
-    margin:auto;
+#kurs1, #kurs2 {
     text-align: center;
-    padding-top: 40px;
+    padding: 2% 0;
     width: 40%;
-    height: 65px;
-    border: 4px dashed lightblue;
-    float:left;
-    
+    height: 20%;
+    border: 4px dashed lightblue; 
 }
-#eksternWrapper {
-    margin: auto;
-    max-width: 70%;
-}
+
 #eksternTittel {
-    text-align: center;
-    padding: 20px;
-}
-#kurs1 {
-    margin-left: 50px;
-    margin-right: 25px;
-    float:left;
-}
-#kurs2 {
-    float:left;
+  text-align: center;
+  padding: 20px;
 }
 #boxes {
-    width:70%;
-    margin:auto;
     padding-top: 20px;
 }
 .tekst1 {
@@ -482,7 +472,6 @@ h2:before, h2:after {
   margin: 2%; 
 }
 
-/* treninger tinus forsøk */
 #treningInfo1 {
     clear: left;
     margin-left: 15%;
