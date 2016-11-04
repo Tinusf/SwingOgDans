@@ -395,8 +395,22 @@ h2:before, h2:after {
     float: none;
     margin-left: 5%;
   }
-}
 
+    #eksternWrapper {
+        width: 100%;
+    }
+    #eksternTittel {
+        text-align: center;
+        padding-bottom: 10px;
+        font-size-adjust: auto;
+    }
+    #kurs1, #kurs2 {
+        display: none;
+    }
+    .tekst1 {
+        width: 100%;
+    }
+}
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
   p, article, #navbarMenuBtn, .navbarClass, li, footer {
@@ -438,7 +452,7 @@ h2:before, h2:after {
     margin: auto;
     max-width: 70%;
 }
-h1 {
+#eksternTittel {
     text-align: center;
     padding: 20px;
 }
@@ -447,15 +461,18 @@ h1 {
     margin-right: 25px;
     float:left;
 }
+#kurs2 {
+    float:left;
+}
 #boxes {
     width:70%;
     margin:auto;
+    padding-top: 20px;
 }
 .tekst1 {
     margin: auto;
     width: 70%;
-    height: 275px;
-    padding-top: 20px
+    height: 100%;
 }
 
 /*Musikk */
