@@ -5,11 +5,11 @@ document.getElementById('knapp1').addEventListener("click", openBox1);
 document.getElementById('close1').addEventListener("click", closeBox1);
 
 function openBox1(){
-    popoutBox1.style.display = "block";
+	popoutBox1.style.display = "block";
 }
 
 function closeBox1(){
-    popoutBox1.style.display = "none";
+	popoutBox1.style.display = "none";
 }
 
 
@@ -20,11 +20,11 @@ document.getElementById('knapp2').addEventListener("click", openBox2);
 document.getElementById('close2').addEventListener("click", closeBox2);
 
 function openBox2(){
-    popoutBox2.style.display = "block";
+	popoutBox2.style.display = "block";
 }
 
 function closeBox2(){
-    popoutBox2.style.display = "none";
+	popoutBox2.style.display = "none";
 }
 
 
@@ -35,11 +35,11 @@ document.getElementById('knapp3').addEventListener("click", openBox3);
 document.getElementById('close3').addEventListener("click", closeBox3);
 
 function openBox3(){
-    popoutBox3.style.display = "block";
+	popoutBox3.style.display = "block";
 }
 
 function closeBox3(){
-    popoutBox3.style.display = "none";
+	popoutBox3.style.display = "none";
 }
 
 
@@ -50,11 +50,11 @@ document.getElementById('knapp4').addEventListener("click", openBox4);
 document.getElementById('close4').addEventListener("click", closeBox4);
 
 function openBox4(){
-    popoutBox4.style.display = "block";
+	popoutBox4.style.display = "block";
 }
 
 function closeBox4(){
-    popoutBox4.style.display = "none";
+	popoutBox4.style.display = "none";
 }
 
 
@@ -65,11 +65,11 @@ document.getElementById('knapp5').addEventListener("click", openBox5);
 document.getElementById('close5').addEventListener("click", closeBox5);
 
 function openBox5(){
-    popoutBox5.style.display = "block";
+	popoutBox5.style.display = "block";
 }
 
 function closeBox5(){
-    popoutBox5.style.display = "none";
+	popoutBox5.style.display = "none";
 }
 
 
@@ -80,11 +80,11 @@ document.getElementById('knapp6').addEventListener("click", openBox6);
 document.getElementById('close6').addEventListener("click", closeBox6);
 
 function openBox6(){
-    popoutBox6.style.display = "block";
+	popoutBox6.style.display = "block";
 }
 
 function closeBox6(){
-    popoutBox6.style.display = "none";
+	popoutBox6.style.display = "none";
 }
 
 
@@ -95,11 +95,11 @@ document.getElementById('knapp7').addEventListener("click", openBox7);
 document.getElementById('close7').addEventListener("click", closeBox7);
 
 function openBox7(){
-    popoutBox7.style.display = "block";
+	popoutBox7.style.display = "block";
 }
 
 function closeBox7(){
-    popoutBox7.style.display = "none";
+	popoutBox7.style.display = "none";
 }
 
 
@@ -110,11 +110,11 @@ document.getElementById('knapp8').addEventListener("click", openBox8);
 document.getElementById('close8').addEventListener("click", closeBox8);
 
 function openBox8(){
-    popoutBox8.style.display = "block";
+	popoutBox8.style.display = "block";
 }
 
 function closeBox8(){
-    popoutBox8.style.display = "none";
+	popoutBox8.style.display = "none";
 }
 
 
@@ -125,11 +125,11 @@ document.getElementById('knapp9').addEventListener("click", openBox9);
 document.getElementById('close9').addEventListener("click", closeBox9);
 
 function openBox9(){
-    popoutBox9.style.display = "block";
+	popoutBox9.style.display = "block";
 }
 
 function closeBox9(){
-    popoutBox9.style.display = "none";
+	popoutBox9.style.display = "none";
 }
 
 
