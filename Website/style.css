@@ -556,7 +556,7 @@ h2:before, h2:after {
   text-decoration: none;
 }
 #treningList li a:active {
-  color:red;
+  color: #F3EBD7;
 }
 #treningsTekst {
   padding: 5%;
