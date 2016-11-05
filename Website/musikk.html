@@ -7,39 +7,51 @@
 	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
 </head>
 <body>
-	<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>
-	<ul class="navbarClass" id="navbarID">
-		<li><a href=".">HJEM</a></li>
-		<li><a href="treninger">TRENINGER</a></li>
-		<li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
-		<li><a href="musikk" id="current">MUSIKK</a></li>
-		<li><a href="om_oss">OM OSS</a></li>
-		<li><a href="kontakt">KONTAKT</a></li>
-		<li><a href="faq">FAQ</a></li>
-		<li><a href="english">ENGLISH</a></li>
-		<li class="icon">
-    		<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
-	</ul>
+	<div id="footerWrapper">
+		<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>
+		<ul class="navbarClass" id="navbarID">
+			<li><a href=".">HJEM</a></li>
+			<li><a href="treninger">TRENINGER</a></li>
+			<li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
+			<li><a href="musikk" id="current">MUSIKK</a></li>
+			<li><a href="om_oss">OM OSS</a></li>
+			<li><a href="kontakt">KONTAKT</a></li>
+			<li><a href="faq">FAQ</a></li>
+			<li><a href="english">ENGLISH</a></li>
+			<li class="icon">
+	    		<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
+		</ul>
 
-	<button id="musicPrev"> < </button>
+		<button id="musicPrev">&lt;</button>
 
-	<div id = musicBox1>
-		<p id="musicInfo1"> Swing >110 </p>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame1"></iframe>
+			<div id="musicBoxAll">
+
+				<div id = musicBox1>
+					<h2 id="musicInfo1"> Swing >110 </h2>
+					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="380" id="musiciFrame1"></iframe>
+				</div>
+
+				<div id = musicBox2>
+					<h2 id="musicInfo2"> Swing 111-120 </h2>
+					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" id="musiciFrame2"></iframe>
+				</div>
+
+				<div id = musicBox3>
+					<h2 id="musicInfo3"> Swing 121-130 </h2>
+					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" id="musiciFrame3"></iframe>
+				</div>
+
+			</div>
+
+		<button id="musicNext">&gt;</button>
 	</div>
-
-	<div id = musicBox2>
-		<p id="musicInfo2"> Swing 111-120 </p>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame2"></iframe>
-	</div>
-
-	<div id = musicBox3>
-		<p id="musicInfo3"> Swing 121-130 </p>
-		<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" frameborder="0" allowtransparency="true" id="musiciFrame3"></iframe>
-	</div>
-
-	<button id="musicNext"> > </button>
-
+	<footer>
+		<ul>
+			<li>addresse: ntnuveien4000</li>	
+			<li>epost:dansogswing@gmail.com</li>
+			<li>Websposjekt 2016</li>
+		</ul>  
+	</footer>
 	<script src="scripts/musicArrow.js"></script>
 	<script src="scripts/navbarMenu.js"></script>
 </body>

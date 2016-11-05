@@ -341,6 +341,9 @@ h2:before, h2:after {
   #mazeMapIframe {
   margin-top: 5%;
   }
+  #musicPrev, #musicNext{
+  font-size: 30px;
+  }
 }
 
 /* telefon eller lite vindu*/
@@ -434,11 +437,14 @@ h2:before, h2:after {
     font-size: 40px;
   }
 
-  #close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9, #faqID .pluss {
+  #close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9, #faqID .pluss, #musicPrev, #musicNext {
     font-size: 80px;
   }
+  #musicInfo1, #musicInfo2, #musicInfo3 {
+    font-size: 60px;
+  }
 
-  #facebookFeed, #mazeMapIframe {
+  #facebookFeed, #mazeMapIframe, #musiciFrame1, #musiciFrame2, #musiciFrame3 {
     transform:scale(1.8);
     margin: 200px;
   }
@@ -482,7 +488,7 @@ h2:before, h2:after {
 
 #musicBox1{
   padding: 2%;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 #musicBox2{
@@ -500,7 +506,6 @@ h2:before, h2:after {
   opacity:0.4;
   background-color: lightgrey;
   padding: 30px 20px;
-  font-size: 20px;
   border:none;
   border-radius: 5px;
 }
@@ -511,24 +516,14 @@ h2:before, h2:after {
 
 #musicPrev{
   position:absolute;
-  margin-top: 300px;
+  left: 0px;
+  top: 300px;
 }
 
 #musicNext{
-  float:right;
-}
-
-#musicInfo1, #musicInfo2, #musicInfo3{
-  font-size: 18px;
-  font-family: georgia,verdana;
-}
-
-/* musikk liten skjerm */
-@media only screen and (max-device-width : 940px), screen and (max-width : 940px) {
-  #musicBox1{
-  padding: 2%;
-  margin-left: 5%;
-  }
+  position:absolute;
+  right: 0px;
+  top: 300px;
 }
 
 /*TRENING*/
