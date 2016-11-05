@@ -429,8 +429,11 @@ h2:before, h2:after {
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-  p, article, #navbarMenuBtn, .navbarClass, li, footer {
-    font-size: 36px;
+  #navbarMenuBtn {
+    font-size: 42px;
+  }
+  p, article, li, footer {
+    font-size: 48px;
   }
 
   #split3Middle > div {
@@ -452,10 +455,10 @@ h2:before, h2:after {
     margin-left:1%;
   }
   #footerWrapper{
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   }
   footer{
-    height: 100px; 
+    height: 140px; 
   }
 }
 /* Eksterne kurs */
