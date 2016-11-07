@@ -5,7 +5,7 @@ function textClick(a,b) {
 		a.style.display = 'block';
 		b.innerHTML = '−';
 	}
- 	else{
+	else{
 		a.style.display = 'none';
 		b.innerHTML = '+';
 	}
