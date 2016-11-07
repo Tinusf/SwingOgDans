@@ -1,3 +1,12 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: All
+WHEN: Autum 2016
+PURPOSE: provide styles to all sub-sites on the NTNUI swing and
+folkedans-site.
+*/
+
+/* General styles for font and body */
 * {
 	margin: 0;
 	padding: 0;
@@ -15,6 +24,30 @@ p, article {
 }
 a {
 	color: black;
+}
+
+/* Styles for the footer
+The footerWrapper pushes the footer wrapper to the bottom of the
+paged regardless if there is content in it or not*/
+#footerWrapper{
+	position: relative;
+	min-height: 100%;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+footer{
+	height: 35px; 
+	padding: 2% 0;
+	background-color: #0D333F;
+	color: #3C9AA5;
+	width: 100%;
+	text-align: center;
+}
+footer > ul > li{
+	display: inline;
+	list-style-type: none;
+	padding: 0 2%;
+	width: 100%;
 }
 /* Cover og Navbar */
 #cover {
@@ -48,7 +81,13 @@ ul.navbarClass li.icon {
 	font-size: 15px;
 }
 
-/* FAQ - Sigve */
+/* 
+WRITTEN BY: Sigve S. Nordgaard;
+Style for faq.html excluding the navbar. 
+All id's marked with faq.
+*/
+
+/* Provides padding for the main content of the page */
 #faqWrapper{
 	padding: 0 15% 10%;
 	position: relative;
@@ -57,20 +96,22 @@ ul.navbarClass li.icon {
 	display: inline-block;
 	width: 70%;
 }
+/* List containing the anwers and questions of the faq */
 #faqID{
 	min-width: 100%;
 	list-style-type: none;
 	margin-top: 50px;
-	position: relative;
 	display: inline-block;
 	text-align: left;
 }
+/* Main header of the page */
 #faqHeader{
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 30px;
 }
+/* Questions of the faq */
 #faqID .question{
 	color: #3C9AA5;
 	font-weight: bold;
@@ -78,12 +119,15 @@ ul.navbarClass li.icon {
 	position: relative;
 	width: 90%;
 }
+/* Answers to the faq, initially hidden */
 #faqID .answer{
 	display: none;
 	position: relative;
 	width: 70%;
 }
-
+/* the clickable pluss symbol positioned relative to the 
+anwer class. Has transparent background and outline. Changes
+color when the hoveres over by the pointer */
 #faqID .pluss{
 	position: absolute;
 	right: -10%;
@@ -100,30 +144,9 @@ ul.navbarClass li.icon {
 #faqID .pluss:hover{
 	color: #0D333F;
 }
-#faqID #a8 ul{
-	margin-left: 5%;
-	list-style-type: square;
-}
-#footerWrapper{
-	position: relative;
-	min-height: 100%;
-	overflow: hidden;
-	margin-bottom: 35px;
-}
-footer{
-	height: 35px; 
-	padding: 2% 0;
-	background-color: #0D333F;
-	color: #3C9AA5;
-	width: 100%;
-	text-align: center;
-}
-footer > ul > li{
-	display: inline;
-	list-style-type: none;
-	padding: 0 2%;
-	width: 100%;
-}
+/* Sets a horizontal line after every second child of the
+question class, that is the lines between the different 
+questions of the faq */
 #faqID > .question:nth-child(n+2):after {
 	content: "";
 	display: block;
@@ -135,7 +158,18 @@ footer > ul > li{
 	margin: 1em 0;
 	padding: 0; 
 }
+/* Anchor element containing the href to the last answer */
+#faqID a{
+	color: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
 
+}
+/* List in the last question of the faqx*/
+#faqID #a8 ul{
+	margin-left: 5%;
+	list-style-type: square;
+}
 /* Om oss */
 #content{
 	width: 100%;

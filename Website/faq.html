@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+FILE NAME: faq.html
+WRITTEN BY: Sigve S. Nordgaard
+WHEN: Autum 2016
+PURPOSE: Provide frequently asked questions sub-site within the NTNUI swing og folkedans-site in a list with clickable text and icons to show and hide the answers
+-->
 <html lang="no">
 <head>
 	<meta charset="utf-8" />
@@ -6,6 +12,11 @@
 	<title>NTNUI Swing og Folkedans</title>
 	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
 </head>
+
+<!-- 
+Collective nav-bar for all sub-sites
+href needs the faq list item needs id="current" for the button to display that we are on this sub-site
+-->
 <body>
 	<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>	
 	<ul class="navbarClass" id="navbarID">
@@ -20,11 +31,25 @@
 		<li class="icon">
 			<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
 	</ul>
-
+<!--
+The footerWrapper provides a wrapper element for the footer. This way we can style it with css to be forced below the main site even when it has little to no content
+-->
 	<div id="footerWrapper">	
+	<!--
+	The faqWrapper provides a wrapper element for the main content in this sub-site and alows us to style the element with padding in css to position it on the page, and fit this margin to the screen width
+	-->
 	<div id="faqWrapper">
 	<ul  id ="faqID">
+		<!-- 
+		Custon id for styling the main header on the site
+		-->
 		<li id="faqHeader">FAQ</li>
+		<!--
+		Each question and answer is based on three classes wich all provide style and functionallity:
+		queston - When clicked a javascript code fires wich shows or hides the answer class.
+		pluss - is a subclass of question to also make it clickable. It is always positioned to the right of the question and will be fitted according to the screen. The inner html changes when the text is show to a minus-sign.
+		answer - Contains the answer to the question wich if shown and hidden when the question class is clicked
+		-->
 		<li class="question" onclick="textClick('a1','b1')">Trenger jeg partner for å bli med på treningene?				   
 			<div class="pluss" id="b1">+</div>
 		</li>
@@ -77,10 +102,12 @@
 		 <li class="answer" id="a7">
 			Svar: Nei. Kurset tar høyde for at de fleste aldri har danset før. 
 		</li> 
+		<!--
+		The last answer is much longer than the others, the href in the anchor element shifts the focus to b8 when a8 is clicked.
+		-->
+		<li class="question" onclick="textClick('a8','b8')"><a href="#b8">Når kan jeg begynne på videregåendekurset/hva må jeg kunne?				   
 
-		<li class="question" onclick="textClick('a8','b8')">Når kan jeg begynne på videregåendekurset/hva må jeg kunne?				   
-
-			<a href="#b8"><div class="pluss" id="b8">+</div></a>
+			<div class="pluss" id="b8">+</div></a>
 
 		 <li class="answer" id="a8">
 			Svar: Vi anbefaler at man har gått to semester på nybegynnerkurset før man begynner på videregående. Dette forventes av de som begynner på videregående:
@@ -118,7 +145,6 @@
 					<li>(Gutter) Ikke: tving bevegelser gjennom, ikke kollaps armer.</li>
 					<li>Kjenne til hvordan man bruker blikket i dansen.</li>
 				</ul>
-			
 		</li> 
 	</ul>
 	</div>
