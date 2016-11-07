@@ -423,11 +423,11 @@ h2:before, h2:after {
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	#navbarMenuBtn {
-		font-size: 30px;
-	}
-	p, article, .navbarClass, li, footer, table {
+	p, article, .navbarClass, li, footer, table, #navbarMenuBtn {
 		font-size: 36px;
+	}
+	h1,h2,h2, #tittel, #faqHeader {
+		font-size: 3em;
 	}
 
 	#split3Middle > div {
