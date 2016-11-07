@@ -356,6 +356,8 @@ h2:before, h2:after {
 		float: right;
 		margin-right: 15%;
 	}
+    
+    /* Sier hvordan boksene skal reagere hvis skjermen blir liten. */
 	#kurs1 {
 		margin-left: 5%;
 		float:left;
@@ -366,6 +368,7 @@ h2:before, h2:after {
 		float:left;
 		margin-left: 2%;
 	}
+    
 	#mazeMapIframe {
 	 margin-top: 5%;
 	}
@@ -443,6 +446,7 @@ h2:before, h2:after {
 		float: none;
 		margin-left: 5%;
 	}
+     /* Sier hvordan eksterne kurs siden skal reagere hvis skjermen blir liten. */
 	#eksternTittel {
 		text-align: center;
 		padding-bottom: 10px;
