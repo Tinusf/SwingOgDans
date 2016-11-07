@@ -49,33 +49,36 @@ footer > ul > li{
 	padding: 0 2%;
 	width: 100%;
 }
-/* Cover og Navbar */
+/* Cover og Navbar
+WRITTEN BY: Tinus Flagstad
+Lage en navbar som ser fin ut både på mobil og desktop.
+*/
 #cover {
 	width: 100%;
 }
 
 #navbarID {
-	list-style-type: none;
+	list-style-type: none; /* vil ikke ha vanlig boks ved navbaren */
 	overflow: hidden;
 	background-color: #3C9AA5;
 	margin-top:-7px;
-	margin-bottom: 20px;
+	margin-bottom: 20px; /* vil ha litt plass under navbaren før det kommer andre ting. */
 }
 ul.navbarClass li {
-	float: left;
+	float: left; /* Så navbaren blir horisontal og ikke vertikal. */
 }
 ul.navbarClass li a {
-	display: inline-block;
+	display: inline-block; /* Så knappene blir større uten å gjøre teksten større.*/
 	color: black;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: 0.4s;
+	padding: 14px 16px; /* mellomrom mellom knappene */
+	text-decoration: none; /* fjerne streken under ordene */
+	transition: 0.4s; /*hvor lang tid det tar for knapper på navbaren til å få en hvit-ish farge når du hooverer over dem*/
 }
 ul.navbarClass li a:hover, #current {
 	background-color: #F3EBD7;
 }
 ul.navbarClass li.icon {
-	display: none;
+	display: none; /*som vanlig skal ikke meny-knappen være synlig, bare når vinduet blir lite/ mobil */
 }
 #navbarMenuBtn {
 	font-size: 15px;
@@ -318,8 +321,12 @@ h2:before, h2:after {/*styler før og etter h2*/
 	margin: 30px auto;
 }
 
-
-/* Kontakt oss */
+/*
+Kontakt oss 
+WRITTEN BY: Tinus Flagstad 
+WHEN: September 2016
+PURPOSE: lage bokser i boksen i midten på kontakt-siden.
+*/
 #split3Middle > div{
 	padding: 20px 0;
 	margin: 10px 0;
@@ -328,7 +335,11 @@ h2:before, h2:after {/*styler før og etter h2*/
 
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
-	/* hjem */
+	/* hjem 
+	WRITTEN BY: Tinus Flagstad 
+	WHEN: September 2016
+	PURPOSE: få facebook-feeden og velkommen til å scale riktig.
+	*/
 	#floatRight {
 		float: right;
 		margin-right: 15%;
@@ -338,7 +349,11 @@ h2:before, h2:after {/*styler før og etter h2*/
 		float: left;
 		width: calc(70% - 540px);
 	}
-	/* kontakt oss*/
+	/* kontakt oss
+	WRITTEN BY: Tinus Flagstad 
+	WHEN: September 2016
+	PURPOSE: få de tre div'ene på kontakt til å scale riktig på desktop(altså stort vindu).
+	*/
 	#split3Left {
 		margin-left: 15%;
 		float: left;
@@ -351,8 +366,8 @@ h2:before, h2:after {/*styler før og etter h2*/
 		width: 20%;
 		float: left;
 		text-align: center;
-		border: 2px solid #3C9AA5;
-		word-wrap: break-word;
+		border: 2px solid #3C9AA5; /* den største boksen i midten */
+		word-wrap: break-word; /*noen av e-mailene var lange og gikk uttafor boksen med noen størrelser på vinduet. */
 	}
 
 	#split3Right {
@@ -374,42 +389,46 @@ h2:before, h2:after {/*styler før og etter h2*/
 	}
     
 	#mazeMapIframe {
-	 margin-top: 5%;
+	 margin-top: 5%; /* litt ekstra plass over mazemappet på trening og english. */
 	}
-	#musicPrev, #musicNext{
+	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
 	 font-size: 30px;
 	}
 }
 
 /* telefon eller lite vindu*/
 @media only screen and (max-device-width : 940px), screen and (max-width : 940px) {
-	ul.navbarClass li:not(:first-child) {
-		display: none;
+	/* hjem (eller navbaren da)
+	WRITTEN BY: Tinus Flagstad 
+	WHEN: Oktober 2016
+	PURPOSE: mobilversjonen av navbaren, altså lage en dropdown menu når du trykker på knapp istedenfor å vise alle knappene samtidig. */
+	ul.navbarClass li:not(:first-child) { 
+		display: none; /* gjør alle andre knapper en hjem usynlig. */
 	}
-	ul.navbarClass li.icon {
-		float: right;
+	ul.navbarClass li.icon { /*viser meny knappen og putter den til høyre. */
+		float: right; 
 		display: inline-block;
 	}
 	ul.navbarClass.responsive {
-		position: relative;
-	}
+		position: relative; 
+	}/* gjør at meny-knappen blir den der skal */
 	ul.navbarClass.responsive li.icon {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
-	ul.navbarClass.responsive li {
+	ul.navbarClass.responsive li { /*gjør at knappene kommer under hverandre igjen, ikke ved siden av hverandre */
 		float: none;
 		display: inline;
 	}
 	ul.navbarClass.responsive li a {
 		display: block;
-		text-align: left;
+		text-align: left; /* tekst skal være blokk og gå mot venstre, ikke i midten lenger */
 	}
 	#floatLeft {
 		margin-left: 5%;
 		width: 90%;
-	}
+	} /* Dette er på index.html (hjem-siden) og her kommer facebook-feed under velkomsttekst istedenfor ve siden av hverandre. */
 	#floatRight {
 		float: none;
 		margin-left: 5%;
@@ -429,6 +448,11 @@ h2:before, h2:after {/*styler før og etter h2*/
 	#faqID .answer{
 		width: 90%;
 	}
+	/* kontakt oss
+	WRITTEN BY: Tinus Flagstad 
+	WHEN: September 2016
+	PURPOSE: få de tre Div'ene til å være under hverandre istedenfor ved siden av hverandre. og mindre margin på siden.
+	*/
 
 	#split3Left {
 		margin-left: 5%;
@@ -464,7 +488,7 @@ h2:before, h2:after {/*styler før og etter h2*/
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	p, article, .navbarClass, li, footer, table, #navbarMenuBtn {
+	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 36px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
@@ -476,18 +500,18 @@ h2:before, h2:after {/*styler før og etter h2*/
 	}
 
 	#close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9, #faqID .pluss, #musicPrev, #musicNext {
-		font-size: 80px;
+		font-size: 80px; /* større knapper på mobil */
 	}
 	#musicInfo1, #musicInfo2, #musicInfo3 {
 		font-size: 60px;
 	}
 
 	#facebookFeed, #mazeMapIframe, #musiciFrame1, #musiciFrame2, #musiciFrame3 {
-		transform:scale(1.8);
+		transform:scale(1.8); /*scaler alle iframe på mobil, både mazemap, facebook og spotify.*/
 		margin: 200px;
 	}
 	#footerWrapper{
-		margin-bottom: 100px;
+		margin-bottom: 100px; /*større footer og footerplass på mobil*/
 	}
 	footer{
 		height: 100px; 
@@ -561,8 +585,13 @@ h2:before, h2:after {/*styler før og etter h2*/
 	top: 300px;
 }
 
-/*TRENING*/
 
+/*
+/*TRENING
+WRITTEN BY: 
+WHEN: September 2016
+PURPOSE: 
+*/
 #treningInfo {
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -576,10 +605,10 @@ h2:before, h2:after {/*styler før og etter h2*/
 	text-align: center;
 }
 #treningList li {
-	float: left;
+	float: left; /*lage en liten horisontal navbar for alle trenings-dagene. */
 	margin: 2%; 
 }
-#treningList li:first-child {
+#treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
 	float: none;
 }
 #treningList li a{
