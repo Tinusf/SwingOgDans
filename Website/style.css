@@ -412,7 +412,6 @@ h2:before, h2:after {
 	#eksternTittel {
 		text-align: center;
 		padding-bottom: 10px;
-		font-size-adjust: auto;
 	}
 	#kurs1, #kurs2 {
 		margin-left: 20%;
