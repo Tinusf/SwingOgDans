@@ -1,15 +1,15 @@
-let popoutBox1 = document.getElementById('popoutBox1');
+let popoutBox1 = document.getElementById('popoutBox1'); //henter id fra html dokumentet
 
-document.getElementById('knapp1').addEventListener("click", openBox1);
+document.getElementById('knapp1').addEventListener("click", openBox1); //kjører funksjonen når boksen blir klikket
 
-document.getElementById('close1').addEventListener("click", closeBox1);
+document.getElementById('close1').addEventListener("click", closeBox1); //kjører funksjonen når man trykker på krysset
 
 function openBox1(){
-	popoutBox1.style.display = "block";
+	popoutBox1.style.display = "block"; //viser boksen
 }
 
 function closeBox1(){
-	popoutBox1.style.display = "none";
+	popoutBox1.style.display = "none"; //skjuler boksen
 }
 
 

@@ -170,8 +170,10 @@ questions of the faq */
 	margin-left: 5%;
 	list-style-type: square;
 }
+
+
 /* Om oss */
-#content{
+#content{/*bredde på siden*/
 	width: 100%;
 	margin: 0 auto;
 }
@@ -185,20 +187,20 @@ questions of the faq */
 	margin-bottom: 60px;
 }
 
-#info{
+#info{/*flytter infoboks til høyre på siden*/
 	width: 35%;
 	float: right;
 	margin: 10px 80px 100px 0px;
 }
 
-#personer {
+#personer {/*plasserer boksen med alle personene i*/
 	width: 45%;
 	height: 100%;
 	margin: 0px 0px 200px 40px;
 	padding-bottom: 40px;
 }
 
-.person {
+.person {/*plasserer hver person relativ til hverandre*/
 	position: relative;
 	width: 150px;
 	height: 150px;
@@ -218,7 +220,7 @@ questions of the faq */
 	border-radius: 50%;
 }
 				
-.img:before, .img:after {
+.img:before, .img:after {/*styler før og etter bilde-elementet*/
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -236,7 +238,7 @@ questions of the faq */
 	background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.5), transparent);
 }
 
-.container {
+.container {/*teksinnholdet*/
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -248,7 +250,7 @@ questions of the faq */
 	transition: all 0.5s;
 }
 
-h2:before, h2:after {
+h2:before, h2:after {/*styler før og etter h2*/
 	display: inline-block;
 	margin: 0 0.5em;
 	width: 0.75em;
@@ -259,10 +261,10 @@ h2:before, h2:after {
 
 .person:hover .img:before,
 .person:hover .img:after,
-.person:hover .container {
+.person:hover .container {/*bestemmer opacity når man hovrer over*/
 	opacity: 1;
 }
-.person:hover .container {
+.person:hover .container {/*bestemmer hvordan teksten skal komme fram når man hovrer over*/
 	transform: translate(-50%, -50%) scale(1);
 }
 
@@ -275,7 +277,7 @@ h2:before, h2:after {
 	font-size: 12px;
 }
 	 /*popout box*/
-.modal {
+.modal {/*gjør bakgrunnen bak popoutboksen mørkere*/
 	display: none;
 	position: fixed;
 	left: 0;
@@ -287,7 +289,7 @@ h2:before, h2:after {
 	background-color: rgba(0,0,0,0.4);
 }
 
-.modal-box {
+.modal-box {/*poputboks bakgrunn*/
 	background-color: white;
 	border: 6px solid #3C9AA5;
 	margin: 10% auto;
@@ -295,7 +297,7 @@ h2:before, h2:after {
 	width: 60%;
 }
 
-#close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9 {
+#close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9 {/*styler close-knappen*/
 	color: #3C9AA5;
 	float: right;
 	font-family: sans-serif;
@@ -305,15 +307,17 @@ h2:before, h2:after {
 }
 
 #close1:hover, #close1:focus, #close2:hover, #close2:focus, #close3:hover, #close3:focus, #close4:hover, #close4:focus, #close5:hover, #close5:focus, #close6:hover, #close6:focus, #close7:hover, #close7:focus, #close8:hover, #close8:focus, #close9:hover, #close9:focus {
+    /*styler close-knappen når den hovres og er i focus*/
 	color: #0D333F;
 	text-decoration: none;
 	cursor: pointer;
 }
 				
-.modal-content{
+.modal-content{/*styler selve innholdet*/
 	width: 90%;
 	margin: 30px auto;
 }
+
 
 /* Kontakt oss */
 #split3Middle > div{
