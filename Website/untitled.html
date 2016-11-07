@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<title>NTNUI Swing og Folkedans</title>
+	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
+</head>
+<body>
+	<a href="."><img src="images/coverSmall.jpg" alt="Coverbildet for NTNUI Swing og Folkedans" id="cover"></a>	
+	<ul class="navbarClass" id="navbarID">
+		<li><a href=".">HJEM</a></li>
+		<li><a href="treninger">TRENINGER</a></li>
+		<li><a href="eksterne_kurs">EKSTERNE KURS</a></li>
+		<li><a href="musikk">MUSIKK</a></li>
+		<li><a href="om_oss">OM OSS</a></li>
+		<li><a href="kontakt">KONTAKT</a></li>
+		<li><a href="faq" id="current">FAQ</a></li>
+		<li><a href="english">ENGLISH</a></li>
+		<li class="icon">
+			<a href="javascript:void(0);" id="navbarMenuBtn" onclick="navBarMenu()">☰</a></li>
+	</ul>
+
+	<div id="footerWrapper">	
+	<div id="faqWrapper">
+	<ul  id ="faqID">
+		<li id="faqHeader">FAQ</li>
+		<li class="question">Trenger jeg partner for å bli med på treningene?				   
+			<button class="pluss" id="b1" onclick="textClick('a1','b1')">+</button>
+		</li>
+		 <li class="answer" id="a1">
+			Svar: Nei. På våre treninger rullerer vi partnere, slik at man bytter dansepartner ganske ofte og man får danse med de fleste av motsatt kjønn. 
+		</li> 
+
+		<li class="question">Jeg har bare lyst til å danse med en spesifikk partner. Får jeg lov til det?				   
+			<button class="pluss" id="b2" onclick="textClick('a2','b2')">+</button>
+		</li>
+		 <li class="answer" id="a2">
+			Svar: Hvis du og partneren din ønsker å holde sammen under hele treningen, så vil vi ikke nekte dere det. Men vi anbefaler at dere følger opplegget vi bruker, hvor man rullerer partnere. Dette er positivt for fellesskapet og det å danse med forskjellige partnere øker læringseffekten drastisk.
+		</li> 
+
+		<li class="question">Koster det noe å delta?				   
+			<button class="pluss" id="b3" onclick="textClick('a3','b3')">+</button>
+		</li>
+		 <li class="answer" id="a3">
+			Svar: Nei. Det eneste som kreves er at du er medlem av NTNUI. Siden treningene holdes i SiT sine lokaler kreves det også at du har tilgang til bygget, enten gjennom medlemskap eller betalt dagsbillett.
+		</li> 
+
+		<li class="question">Hva slags klær anbefales?				   
+			<button class="pluss" id="b4" onclick="textClick('a4','b4')">+</button>
+		</li>
+		 <li class="answer" id="a4">
+			Svar: Når du danser så vil du være relativt nær andre personer og du kommer mest sannsynlig til å svette litt. Derfor er det viktig at klærne dine er rene, og at man bruker klesplagg som dekker skuldrene – så slipper man å plage dansepartnerne sine med sjenerende lukt og lignende. Det vanligste er at man bruker (rent) treningstøy.
+
+			For jenter som ønsker å danse i skjørt eller kjole er det viktig å være observant på at skjørt/kjoler svinger høyere enn hva man forventer når man danser. Det er derfor lurt å bruke heldekkende strømpebukser/shorts/tights under, slik at man slipper å vise frem mer enn man ønsker. 
+		</li> 
+
+		<li class="question">Hva slags sko anbefales?				   
+			<button class="pluss" id="b5" onclick="textClick('a5','b5')">+</button>
+		</li>
+		 <li class="answer" id="a5">
+			Svar: Vanlige treningssko funker, men bruk helst sko som er litt glatte under, dette gjelder særlig jenter. Planlegger du å danse mye så anbefales dansesko med glatt såle, siden det reduserer faren for kneskade og gjør det lettere å snurre.
+
+			Dette kan du få kjøpt på hos Aalberg Skoservice (Fjæregata 3, 7042 Trondheim) og på diverse nettsider. Det er bare å spørre en av instruktørene om tips til type sko og nettside hvis du lurer. 
+		</li> 
+
+		<li class="question">Trenger jeg å melde meg på kurset?				   
+			<button class="pluss" id="b6" onclick="textClick('a6','b6')">+</button>
+		</li>
+		 <li class="answer" id="a6">
+			Svar: Nei. Bare å møte opp. 
+		</li> 
+
+		<li class="question">Trenger jeg å kunne danse før jeg kommer på nybegynnerkurs?				   
+			<button class="pluss" id="b7" onclick="textClick('a7','b7')">+</button>
+		</li>
+		 <li class="answer" id="a7">
+			Svar: Nei. Kurset tar høyde for at de fleste aldri har danset før. 
+		</li> 
+
+		<li class="question">Når kan jeg begynne på videregåendekurset/hva må jeg kunne?				   
+
+			<a href="#b8"><button class="pluss" id="b8" onclick="textClick('a8','b8')">+</button></a>
+
+		 <li class="answer" id="a8">
+			Svar: Vi anbefaler at man har gått to semester på nybegynnerkurset før man begynner på videregående. Dette forventes av de som begynner på videregående:
+			<p>
+				<br>	
+				<i>Steg og turer</i>
+				<ul>
+					<li>Beherske grunnstegene i dansen</li>
+					<li>Grunnleggende turer: Inn/ut og vipp, Ut/inn under arm, Støt, Brems, Fri rotasjon</li>
+					<li>Beherske opptil flere varianter av: Smiletur, juguju, halvmånetur, hammerlock, linje, 	vrengtak, gåturer, hopp, og armkrok med inngang/utgang.</li>
+					<li>Beherske dips, med hensyn til riktig utførelse(!)*</li>
+					<li>Ha kjennskap til ulike modifikasjoner/stylinger (for jenter) i de grunnleggende turene, som trippelsteg og armbevegelser.</li>
+					<li>Gutter: Følge jenta i dansen (bevegelse)</li>
+					<li>I noen grad kjenne til grunnstegene for det motsatte kjønn (rollebytte).</li>
+					<li>Kjenne til noen turer i dans med 2 jenter.</li>
+				</ul>
+			
+			<p>
+				<br>
+				<i>Musikkteori- og forståelse</i>
+				<ul>
+					<li>Bruke bounce i dansen.</li>	
+					<li>Klare å identifisere baktakt, og å danse i riktig takt.</li>
+					<li>Beherske tempo fra (ca) 55 – 90 i sosialdans.</li>
+					<li>Breaks, kjenne til og identifisere breaks</li>
+				</ul>
+			
+			<p>
+				<br>
+				<i>Teknikk</i>
+				<ul>
+					<li>Grunnleggende ramme; 90*, navlehøyde, albuer inntil kroppen, støtte/spennning osv.</li>	
+				<li>Åpne grep, søke guttens hender, holde hendene i dansehøyde(Jenter). Ikke: tappe, høye 	knær, veive med overkropp – roter heller med hofta rundt egen akse.</li>
+					<li>“Glidende/Hengende” oppspenn.</li>
+					<li>(Gutter) Ikke: tving bevegelser gjennom, ikke kollaps armer.</li>
+					<li>Kjenne til hvordan man bruker blikket i dansen.</li>
+				</ul>
+			
+		</li> 
+	</ul>
+	</div>
+	</div>
+	<footer>
+		<ul>
+			<li>addresse: ntnuveien4000</li>	
+			<li>epost:dansogswing@gmail.com</li>
+			<li>Websposjekt 2016</li>
+		</ul>  
+	</footer>
+	
+
+	<script src="scripts/textClick.js"></script>
+	<script src="scripts/navbarMenu.js"></script>
+</body>
+</html>
