@@ -488,7 +488,10 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+	#navbarMenuBtn {
+		font-size: 30px;
+	}
+	p, article, .navbarClass, li, footer, table { /* større tekst på mobil */
 		font-size: 36px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
@@ -627,9 +630,4 @@ PURPOSE:
 #treningsTekst {
 	padding: 5%;
 	border: #3C9AA5 3px solid;
-}
-#floatRight1 { /* plasserer mazemapet høyere opp på siden, sånn at siden ser bedre ut */
-    float: right;
-    margin-right: 15%;
-    margin-top: -7.5%
 }

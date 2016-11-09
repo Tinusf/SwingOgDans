@@ -8,6 +8,8 @@ sider.
 */
 
 createNavBar();
+createFooterElement();
+
 
 function navBarMenu() {
 	const navbarID = document.getElementById("navbarID");
@@ -91,15 +93,15 @@ function whichSiteCurrently() {
 }
 
 function createFooterElement() {
-	const footer = document.createElement("footer");
+	const footer = document.createElement("footer"); //lager en footer
 	const ul = document.createElement("ul");
-	for (let x = 0; x<3; x++) {
+	for (let x = 0; x<3; x++) { //lager 3 li elementer inni en ul
 		const li = document.createElement("li");
 		if (x==0) {
-			li.innerHTML="addresse: ntnuveien4000";
+			li.innerHTML="Adresse";
 		}
 		else if (x==1) {
-			li.innerHTML="epost:dansogswing@gmail.com";
+			li.innerHTML="Epost";
 		}
 		else if (x==2) {
 			li.innerHTML="Webprosjekt 2016";
@@ -107,12 +109,5 @@ function createFooterElement() {
 		ul.appendChild(li);
 	}
 	footer.appendChild(ul);
-	footerWrapper.parentNode.insertBefore(footer, footerWrapper.nextSibling);
+	footerWrapper.parentNode.insertBefore(footer, footerWrapper.nextSibling); //legger den etter footerwrappern.
 }
-
-createFooterElement();
-
-//const p = document.createElement("p");
-//p.innerHTML ="LOL";
-//footerWrapper.parentNode.insertBefore(p, footerWrapper.nextSibling);
-//document.body.insertAfter(p, footerWrapper);
