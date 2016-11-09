@@ -538,8 +538,11 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	margin-right: 15%;
 }
 
-/*Musikk*/
-
+/*Musikk
+WRITTEN BY: Ebba Fingarsen
+WHEN: September 2016
+PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten av siden(endring av margin), og styling og plassering av knapper.
+*/
 #musicBox1, #musicBox2, #musicBox3 {
 	float: left;
 	margin: 2%; 
@@ -561,6 +564,7 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	margin-right: 5%;
 }
 
+/* styling av knapper */
 #musicPrev, #musicNext{
 	opacity:0.4;
 	background-color: lightgrey;
@@ -569,16 +573,19 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	border-radius: 5px;
 }
 
+/* endring av opacity ved hover for å vise at det er en knapp */
 #musicPrev:hover, #musicNext:hover{
 	opacity:0.8;
 }
 
+/* posisjonerer "musicPrev"-knapp absolute og til venstre av musikk siden*/
 #musicPrev{
 	position:absolute;
 	left: 0px;
 	top: 300px;
 }
 
+/* posisjonerer "musicNext"-knapp absolute og til høyre av musikk siden*/
 #musicNext{
 	position:absolute;
 	right: 0px;
@@ -586,7 +593,6 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 
 
-/*
 /*TRENING
 WRITTEN BY: 
 WHEN: September 2016
