@@ -1,3 +1,10 @@
+/*englishTreningTabs.js
+WRITTEN BY: Tinus/ Morten
+WHEN: September 2016
+PURPOSE: Endre teksten i table elementet i treninger.html og treningsteksten (p). 
+Kommentarer til denne koden på er englishTreningTabs.js fordi de er like bortsett fra at denne er på
+norsk, mens den andre er på engelsk.
+*/
 const treningList1 = document.getElementById("treningList1");
 const treningList2 = document.getElementById("treningList2");
 const treningList3 = document.getElementById("treningList3");

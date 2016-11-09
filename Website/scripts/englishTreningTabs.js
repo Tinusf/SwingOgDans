@@ -1,5 +1,5 @@
 /*englishTreningTabs.js
-WRITTEN BY: Kode originalt skrevet av Sigve, men tilpasset til "english" nettsiden av Ebba Fingarsen
+WRITTEN BY: Kode originalt skrevet av Tinus/Morten, men tilpasset til "english" nettsiden av Ebba Fingarsen
 WHEN: September 2016
 PURPOSE: 
 */
