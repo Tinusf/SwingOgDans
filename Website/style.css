@@ -628,7 +628,7 @@ PURPOSE:
 	padding: 5%;
 	border: #3C9AA5 3px solid;
 }
-#floatRight1 {
+#floatRight1 { /* plasserer mazemapet høyere opp på siden, sånn at siden ser bedre ut */
     float: right;
     margin-right: 15%;
     margin-top: -7.5%
