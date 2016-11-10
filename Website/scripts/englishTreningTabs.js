@@ -1,7 +1,7 @@
 /*englishTreningTabs.js
 WRITTEN BY: Kode originalt skrevet av Tinus/Morten, men tilpasset til "english" nettsiden av Ebba Fingarsen
 WHEN: September 2016
-PURPOSE: 
+PURPOSE: Endre teksten i table elementet i treninger.html og treningsteksten (p). 
 */
 
 /* Henter inn treningslistene med id og lagrer de som konstanter. */
