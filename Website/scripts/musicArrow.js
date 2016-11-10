@@ -1,5 +1,6 @@
 /*musicArrow.js
-WRITTEN BY: Ebba Fingarsen
+FILE NAME: musicArrow.js 
+WRITTEN BY: Ebba Fingarsen med hjelp av Tinus Flagstad
 WHEN: September 2016
 PURPOSE: Få "rulleringen" av busikkbokser til å fungere ved både bruk av "musicPrev" og "musicNext".
 */
