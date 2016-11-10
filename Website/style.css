@@ -43,7 +43,7 @@ footer{
 	width: 100%;
 	text-align: center;
 }
-footer > ul > li{
+footer > ul > li{ /* gjøre de tre li elementene fine */
 	display: inline;
 	list-style-type: none;
 	padding: 0 2%;
@@ -81,7 +81,7 @@ ul.navbarClass li.icon {
 	display: none; /*som vanlig skal ikke meny-knappen være synlig, bare når vinduet blir lite/ mobil */
 }
 #navbarMenuBtn {
-	font-size: 15px;
+	font-size: 14px; /* etter mye justering er 14piksler den som passer best for de fleste browsere.*/
 }
 
 /* 
@@ -488,7 +488,10 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+	#navbarMenuBtn { /* Denne størrelsen passer best med de fleste mobilbrowsere. */
+		font-size: 41px;
+	}
+	p, article, .navbarClass, li, footer, table { /* større tekst på mobil */
 		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
@@ -594,7 +597,7 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 
 /*TRENING
-WRITTEN BY: 
+WRITTEN BY: Morten & Tinus Flagstad
 WHEN: September 2016
 PURPOSE: 
 */
@@ -621,7 +624,7 @@ PURPOSE:
 	text-align: center;
 	text-decoration: none;
 }
-#treningList li a:active {
+#treningList li a:active { /* Linken endrer farge når du trykker på den så du kan vite at du trykket på den. */
 	color: #F3EBD7;
 }
 #treningsTekst {

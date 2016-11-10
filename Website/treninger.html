@@ -16,14 +16,14 @@ PURPOSE: Ha fire knapper du kan trykke på for å vise de forskjellige treningst
 	<div id="footerWrapper">
 		
 		<ul id="treningList">
-		<li><h2>TRENINGER</h2></li>
+		<li><h2>TRENINGER</h2></li> <!-- Knapper som bare kjører script, ikke en link til noe annet -->
 		<li><a href="javascript:void(0)" id="treningList1">Onsdag</a></li>
 		<li><a href="javascript:void(0)" id="treningList2">Søndag Swing</a></li>
 		<li><a href="javascript:void(0)" id="treningList3">Søndag Folkedans</a></li>
 		<li><a href="javascript:void(0)" id="treningList4">Søndag Fridans</a></li>
 		</ul>
 
-		<table id="treningInfo">
+		<table id="treningInfo"> <!-- Lager et table for informasjon om treninger som blir endret i treningTabs.js-->
 			<tr>
 				<td><b>TID:</b></td>
 				<td id="treningsTid">20:15 – 22:00</td>
@@ -42,6 +42,7 @@ PURPOSE: Ha fire knapper du kan trykke på for å vise de forskjellige treningst
 			</tr>
 		</table>
 
+		<!-- mazemap og facebook-api har samme ID på divven rundt, det gjør at jeg slipper å copy paste kode når de er nokså like. -->
 		<div id="floatRight">
 			<iframe width="500" height="420" src="http://use.mazemap.com/embed.html?v&#x3D;1&amp;campusid&#x3D;1&amp;left&#x3D;10.4005&amp;right&#x3D;10.4087&amp;top&#x3D;63.4220&amp;bottom&#x3D;63.4197&amp;sharepoitype&#x3D;poi&amp;sharepoi&#x3D;606&amp;utm_medium&#x3D;iframe" id="mazeMapIframe"></iframe>
 		</div>
