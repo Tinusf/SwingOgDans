@@ -488,11 +488,8 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	#navbarMenuBtn {
-		font-size: 30px;
-	}
-	p, article, .navbarClass, li, footer, table { /* større tekst på mobil */
-		font-size: 36px;
+	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
 		font-size: 2.5em;

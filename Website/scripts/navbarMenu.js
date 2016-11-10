@@ -4,11 +4,12 @@ WRITTEN BY: Tinus Flagstad
 WHEN: September 2016
 PURPOSE: Den første funnksjonen "navBarMenu" bytter bare klassen til navbarID så jeg vet om den skal være responsiv eller ikke. Denne bytter jo annenhver gang. 
 Den andre funksjonen "createNavBar" lager navbaren på hver side før footerwrappern som er på alle
-sider.
+sider. Og den siste funksjonen "createCover" lager en a element og img element for coverbildet.
 */
 
-createNavBar();
-createFooterElement();
+createCover(); //først lager jeg coverbildet før footerwrapper.
+createNavBar(); //så navbar under coverbildet men før footerwrapper den og.
+createFooter(); // så lager jeg footer etter footerwrapp.er
 
 
 function navBarMenu() {
@@ -92,7 +93,7 @@ function whichSiteCurrently() {
 	return page;
 }
 
-function createFooterElement() {
+function createFooter() {
 	const footer = document.createElement("footer"); //lager en footer
 	const ul = document.createElement("ul");
 	for (let x = 0; x<3; x++) { //lager 3 li elementer inni en ul
@@ -101,7 +102,7 @@ function createFooterElement() {
 			li.innerHTML="Adresse";
 		}
 		else if (x==1) {
-			li.innerHTML="Epost";
+			li.innerHTML="Epost"; //fyller ut footern med bare example info fordi vi har ikke fått den ekte fra ntnui swing og folkedans-gruppen.
 		}
 		else if (x==2) {
 			li.innerHTML="Webprosjekt 2016";
@@ -110,4 +111,20 @@ function createFooterElement() {
 	}
 	footer.appendChild(ul);
 	footerWrapper.parentNode.insertBefore(footer, footerWrapper.nextSibling); //legger den etter footerwrappern.
+}
+
+function createCover() {
+	const a = document.createElement("a");
+	const img = document.createElement("img");
+	a.href =".";
+	img.alt="Coverbildet for NTNUI Swing og Folkedans";
+	img.id="cover";
+	if (whichSiteCurrently() == "") {
+		img.src="images/cover.jpg"; //fordi hjemsiden har større bildet enn de andre.
+	}
+	else {
+		img.src="images/coverSmall.jpg"
+	}
+	a.appendChild(img);
+	document.body.insertBefore(a, footerWrapper);
 }
