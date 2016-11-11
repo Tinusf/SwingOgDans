@@ -615,7 +615,7 @@ PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til h
 }
 #treningList li {
 	float: left; /*lage en liten horisontal navbar for alle trenings-dagene. */
-	margin: 2%; 
+	margin: 14px 0px; 
 }
 #treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
 	float: none;
@@ -623,6 +623,7 @@ PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til h
 #treningList li a{
 	text-align: center;
 	text-decoration: none;
+	padding: 14px 16px;
 }
 #treningList li a:active { /* Linken endrer farge når du trykker på den så du kan vite at du trykket på den. */
 	color: #F3EBD7;
@@ -630,4 +631,7 @@ PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til h
 #treningsTekst {
 	padding: 5%;
 	border: #3C9AA5 3px solid;
+}
+#treningList li a:hover, .current { /* Hvilken treningsknapp som er trykket på. */
+	background-color: #F3EBD7;
 }
