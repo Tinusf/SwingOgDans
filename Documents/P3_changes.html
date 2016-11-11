@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<title>P3 Project Coding</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<header>
+		<h1>P3 Project Coding</h1>
+	</header> 
+
+	<section>
+		<h2>Document Details</h2>
+		<p>P3 Project Coding</p>
+		<p>Morten Falstad, Tinus Flagstad, Hedda Holmen, Sigve Nordgaard, Ebba Fingarsen</p>
+		<p>IT2805 11. November 2016</p>
+		<a href="http://folk.ntnu.no/tinussf/Website/">Link til siden vår.</a>
+
+	</section>
+
+	<section>
+		<h2>Viktig informasjon</h2>
+		<p>Viktig å vite, vi har lagt til en apache config fil (.htaccess) så vi kan ha alle html-filene i root-mappen uten å ha en stygg .html på slutten av url’en, dermed kan du ikke kjøre den lokalt med mindre du kjører apache server lokalt. Og vi slipper å bare kalle alle html-filene for index.html og legge de i mapper. </p>
+		<p>En annen viktig ting er at vi enda ikke har fått bilder fra NTNUI swing og folkedans personene og ikke all den teksten vi trenger, derfor er det mye stock photos og example tekst som placeholder. (inkludert footer). Vi har også ikke fått <a href="http://org.ntnu.no/swingogdans">http://org.ntnu.no/swingogdans</a> fordi vi har ikke fått dansegruppen til å spør om det. De har vært dårlige på å svare oss og gi tilbakemeldinger/ ting vi trenger fra dem. </p>
+		
+	</section>
+
+	<section>
+		<h2>Endringer:</h2>
+		<section>
+			<h3>Hjem</h3>
+			<p>På index.html så tok vi alle knappene på navbaren mot venstre istedenfor å ha de i midten, vi følte det var de fleste andre nettsider også har og at det ser bedre ut. </p>
+		</section>
+
+		<section>
+			<h3>Treninger</h3>
+			<p>Vi tok blå bakgrunn bak overskriften “treninger” og de 4 knappene. Det så litt uferdig ut uten den fargen.</p>
+		</section>
+
+		<section>
+			<h3>Eksterne kurs</h3>
+			<p>For eksterne kurs ble det ganske så likt som vi hadde tenkt oss med mockupen, med en enkel kolonne av tekst med to tekstbokser under. Det som ble endret var mobilversjonen som gjorde at det ikke lenger ble plass til boksene vedsiden av hverandre, så de måtte stables over hverandre istedetfor.</p>
+		</section>
+
+		<section>
+			<h3>Musikk</h3>
+			<p>Denne nettsiden ble ble relativt lik som planlagt. Vi lagde en liste med alle spillelistene, med tilhørende tempo, som kan rulleres på slik som planen var. Utseende på spillelistene er forskjellig fra mockupen da spotify iframe ser annerledes ut. Valgte også å ha spillelistene større enn på mockupen. Dette gjør spillelistene lettere å bruke på nettsiden. I tillegg til dette droppet vi tekst under spillelistene i tillegg til prikkene som indikerer hvor i listen du er da det er 11 lister og antall indikerende prikker ville da ikke vært like estetisk pent. </p>
+		</section>
+
+
+		<section>
+			<h3>Om oss</h3>
+			<p>Denne siden er for det meste slik vi hadde tenkt den skulle være. Gjorde noen små endringer, som at navnet på personen ikke står under bildet, men kommer til syne når man hovrer over bildet. Bildet er heller ikke blått før man hovrer over slik som vist på mockupen. Siden vi ikke fikk noen bilder fra kontaktpersonen vår, har jeg bare brukt et placeholder-bilde. Droppet også “+” tegnet ettersom jeg synes det så litt rart ut.</p>
+		</section>
+
+		<section>
+			<h3>Kontakt</h3>
+			<p>På kontakt tok jeg teksten “send en mail” inni boksen fordi jeg synes det så litt rart ut om teksten skulle være over den, og på Sosiale medier hadde jeg også e-maillistene fordi det var et naturlig sted og ha de. De har også ikke andre sosiale medier enn facebook, så det var ikke så mange flere knapper vi kunne ha der. Vi skrev også nøyaktig hvor stor boksen skulle være, men når vi lagde siden gjorde vi det heller responsive så det ser bedre ut for alle skjermbredder på browseren. Vi glemte å skrive om mobilsiden her, men jeg tok altså å flyttet ting under hverandre om du browser på mobil eller et lite vindu.</p>
+		</section>
+
+		<section>
+			<h3>FAQ</h3>
+			<p>I tillegg til å kunne trykke på knappene for å skjule/vise svarene la vi også til funksjon for å kunne trykke på teksten for å gjøre det samme. La også til ekstra funksjonalitet for visning på mobil: margen rundt hovedinnholdet blir mindre og knappene blir større.</p>
+		</section>
+
+		<section>
+			<h3>English</h3>
+			<p>English siden ble ganske lik som planlagt. Gjennom javascript på treninger fikk vi endret teksten til engelsk. Siden skulle inneholde “faq” og “treninger”. Tidligere nevnte endringer på disse sidene er dermed gjeldende for denne siden også. </p>
+		</section>
+	</section>
+
+	<section>
+		<h2>Modularity</h2>
+		<p>Vi gjenbrukte koden for navbaren, coverbildet og til footern. Dette gjorde Tinus i navbarMenu.js. Dette gjorde at alle html-dokumentene kunne bare referere til scriptet og ha en div kalt footerwrapper rundt innholdet sitt og alt funket bra. Slipper å copy paste 25 linjer koder på hvert html dokument. Og det er mye lettere å endre noe på alle sidene nå.</p>
+	</section>
+
+	<section>
+		<h2>Javascript</h2>
+		<p>Vi fjernet animasjon på coverbildet fordi vi ville ha en simplere side og en som ikke brukte så mye ressurser. </p>
+		<p>Vi la til et javascript på trening fordi det gjorde det mye lettere å endre informasjon i boksene ved klikk.</p>
+		<p>lagt til en javascript til ”english” fordi vi trengte javascript til trenings delen. Den er lik som den over på trening, men skrevet på engelsk.</p>
+	</section>
+	<section>
+		<h2>Hvordan fullførte vi javascript kravene?</h2>
+		<p>Tinus fullførte sitt javascript krav ved å lage navbaren modular og bruke en funksjon for many-knappen. </p>
+		<p>Hedda fullførte sitt javascript krav ved å lage en popout info box på om_oss-siden. Altså du kan trykke på en person så kommer det opp informasjon om den personen.</p>
+		<p>Sigve fullførte sitt javascript krav ved å lage en funksjon som viste og skjulte tekst når du trykket på den eller på +/- symbolet.</p>
+		<p>Morten fullførte sitt javascript krav ved å lage et skript som gjorde at du kunne trykke på 4 knapper som bytter informasjon om treningsstedene og diverse informasjon.</p>
+		<p>Ebba fullførte sitt javascript krav ved å lage treningsdelen som bytter informasjon på engelsk. Og bla gjennom spotifyspillelister på musikksiden.</p>
+	</section>
+
+	<section>
+		<h2>Hvem som jobbet på hvilken filer:</h2>
+		<table>
+			<tr>
+				<th>Filnavn</th>
+				<th>Beskrivelse</th>
+				<th>Hvem lagde den?</th>
+			</tr>
+			<tr>
+				<td>.htaccess</td>
+				<td>Gjør at du slipper å ha .html i URLen når du bruker denne nettsiden.</td>
+				<td>Tinus</td>
+			</tr>
+			<tr>
+				<td>style.css</td>
+				<td>css filen. For å style alle html-filene.</td>
+				<td>Alle</td>
+			</tr>
+			<tr>
+				<td>index.html</td>
+				<td>Vise en kort velkomststekst og vise facebook-feeden. Også vise stort coverbildet.</td>
+				<td>Tinus</td>
+			</tr>
+			<tr>
+				<td>treninger.html</td>
+				<td>Ha fire knapper du kan trykke på for å vise de forskjellige treningstidene, sted og sånn. Viser mazemap over hvor treningen er. Og det står om kurset.</td>
+				<td>Morten & Tinus</td>
+			</tr>
+			<tr>
+				<td>eksterne_kurs.html</td>
+				<td>Veldig simpelt, bare to bokser med viktig kursinfo og en paragraf med masse tekst.</td>
+				<td>Morten</td>
+			</tr>
+			<tr>
+				<td>musikk.html</td>
+				<td>Tre spillelister fordelt (ved hjelp av div) utover siden med tilhørende takt over hver spilleliste. To knapper på hver side av siden med funksjon å rullere gjennom spillelistene. Har id ved 3 takter og 3 spillelister for å endres i musicArrow.js</td>
+				<td>Ebba</td>
+			</tr>
+			<tr>
+				<td>om_oss.html</td>
+				<td>Info om hvem som sitter i styret o.l. med bilde av alle personene (foreløpig placeholder-bilde).</td>
+				<td>Hedda</td>
+			</tr>
+			<tr>
+				<td>kontakt.html</td>
+				<td>Splitte alt i 3 divs. en del hvor det bare står informasjon, andre del skal gi linker til mail-adresser og siste er sosiale medie link til facebook og link til e-postlister.</td>
+				<td>Tinus</td>
+			</tr>
+			<tr>
+				<td>faq.html</td>
+				<td>Ha mange spørsmål og lage et skript til å vise og skjule svaret.</td>
+				<td>Sigve</td>
+			</tr>
+			<tr>
+				<td>english.html</td>
+				<td>Inneholder lik informasjon som treninger.html og faq.html men endret teksten til engelsk.</td>
+				<td>Ebba</td>
+			</tr>
+			<tr>
+				<td>showHideText.js</td>
+				<td>Vise og skjule tekst som svar i FAQ'en. Du kan enten trykke på +/- symbolet eller trykke på spørsmålsteksten.</td>
+				<td>Sigve</td>
+			</tr>
+			<tr>
+				<td>popoutInfoBox.js</td>
+				<td>Trykk på en av personene i styret på om_oss-siden for å kunne se mer info om dem.</td>
+				<td>Hedda</td>
+			</tr>
+			<tr>
+				<td>navbarMenu.js</td>
+				<td>Endrer klassenavnet til navbaren når den blir trykket på. bytter på annenhver. Denne lager også ul elementet til navbaren og alle li elementene inni. Denne lager også footern med en ul og tre li inni. Og til slutt lager den også coverbildet. (vi burde kalt filen noe annet siden det ikke bare er navbar ting her).</td>
+				<td>Tinus</td>
+			</tr>
+			<tr>
+				<td>musicArrow.js</td>
+				<td>Har en array med alle spotify linkene, og en array med alle forklaringene til spotify linkene. Og et siste array for indexing. Den går gjennom arrayene og endrer informasjon på nettsiden ved klikk.</td>
+				<td>Ebba & Tinus</td>
+			</tr>
+			<tr>
+				<td>treningTabs.js</td>
+				<td>4 mulige “knapper” som endrer informasjonen om tid, kurs, sted og tekst i html’en.</td>
+				<td>Morten & Tinus</td> 
+			</tr>
+			<tr>
+				<td>englishTreningTabs.js</td>
+				<td>Som treningTabs.js bare oversatt på Engelsk.</td>
+				<td>Ebba</td>
+			</tr>
+			<tr>
+				<td>mockups</td>
+				<td>Bilder av hvordan vi ønsket at siden skulle se ut.</td>
+				<td>Hedda</td>
+			</tr>
+			<tr>
+				<td>Images</td>
+				<td>Bildene vi bruker på nettsiden, cover, icon, av personer.</td>
+				<td>Hedda & Tinus</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>

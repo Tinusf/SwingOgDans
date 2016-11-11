@@ -6,7 +6,7 @@ body {
 	margin: auto;
 	background-color: #C4C4C4;
 }
-p, ul, ol {
+p, ul, ol, a {
 	font-size: 18px;
 	line-height: 1.5em;
 }
