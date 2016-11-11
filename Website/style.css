@@ -570,15 +570,16 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+	#navbarID li a, .navbarClass, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
+
 	h1,h2,h2, #tittel, #faqHeader {
 		font-size: 2em;
 	}
 
-	p{
-		font-size: 20px;
+	article, p, li, footer, table {
+		font-size: 36px;
 	}
 	#split3Middle > div {
 		font-size: 40px;
