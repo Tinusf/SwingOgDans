@@ -175,6 +175,31 @@ questions of the faq */
 	list-style-type: square;
 }
 
+/*TRENING
+WRITTEN BY: Morten & Tinus Flagstad
+WHEN: September 2016
+PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til høyre.
+Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
+*/
+#treningInfo {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left:15%;
+}
+#treningList { /* jeg bruker samme css som navbar til treningsbaren bortsett fra dette. Fordi jeg vil ha den tynnere.*/
+	margin-left:15%;
+	margin-right:15%;
+}
+#treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
+	float: none;
+	text-align: center;
+	margin: 2%;
+}
+#treningsTekst {
+	padding: 5%;
+	border: #3C9AA5 3px solid;
+}
+
 
 /* Om oss */
 #content{/*bredde på siden*/
@@ -483,6 +508,11 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		float: none;
 		margin-bottom: 2%;
 	}
+	/* gjøre margin mindre på treningssiden*/
+	#treningList, #treningInfo {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
@@ -591,27 +621,3 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 	top: 300px;
 }
 
-
-/*TRENING
-WRITTEN BY: Morten & Tinus Flagstad
-WHEN: September 2016
-PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til høyre.
-*/
-#treningInfo {
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left:15%;
-}
-#treningList { /* jeg bruker samme css som navbar til treningsbaren bortsett fra dette. Fordi jeg vil ha den tynnere.*/
-	margin-left:15%;
-	margin-right:15%;
-}
-#treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
-	float: none;
-	text-align: center;
-	margin: 2%;
-}
-#treningsTekst {
-	padding: 5%;
-	border: #3C9AA5 3px solid;
-}
