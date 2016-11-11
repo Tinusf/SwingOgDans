@@ -410,6 +410,10 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	WHEN: September 2016
 	PURPOSE: få de tre div'ene på kontakt til å scale riktig på desktop(altså stort vindu).
 	*/
+	.avmelding{
+		list-style:none;
+	}
+
 	#split3Left {
 		margin-left: 15%;
 		float: left;
