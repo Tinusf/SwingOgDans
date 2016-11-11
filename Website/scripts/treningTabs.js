@@ -22,7 +22,7 @@ treningList1.addEventListener("click", function() {
 	treningsTid.innerHTML="20:15 – 22:00";
 	treningsKurs.innerHTML = "Swing (Videregående)";
 	treningsSted.innerHTML = "Idrettsbygget Gløshaugen, Armfeldtsalen";
-	treningsTekst.innerHTML = "Dette kurset er beregnet for de som har danset swing i minst ett år (to semester) hos oss. Kurset har fokus på avanserte turer og teknikk, med litt annet krydder, som f.eks. gutt med to jenter og hopp/løft. Om du er usikker på hvilket nivå du bør være på, eller lurer på noe annet: ikke nøl med å ta kontakt med en av instruktørene🙂 Vi anbefaler å ha vært gjennom minst to semester med nybegynnerkurs før man blir med på videregåendepartiet, dette er viktig for å opprettholde nivået på dette kurset for alle deltagere, siden vi dessverre kun har kurs på to nivå.";
+	treningsTekst.innerHTML = "Dette kurset er beregnet for de som har danset swing i minst ett år (to semester) hos oss. Kurset har fokus på avanserte turer og teknikk, med litt annet krydder, som f.eks. gutt med to jenter og hopp/løft. Om du er usikker på hvilket nivå du bør være på, eller lurer på noe annet: ikke nøl med å ta kontakt med en av instruktørene :) Vi anbefaler å ha vært gjennom minst to semester med nybegynnerkurs før man blir med på videregåendepartiet, dette er viktig for å opprettholde nivået på dette kurset for alle deltagere, siden vi dessverre kun har kurs på to nivå.";
 	clearClasses();
 	treningList1.className ="current";
 });
