@@ -239,6 +239,7 @@ PURPOSE: Få bildene til venstre på siden og teksten til høyre. Hovereffekt p�
 	height: 100%;
 	margin: 0px 0px 200px 40px;
 	padding-bottom: 40px;
+	float:left;
 }
 
 .person {/*plasserer hver person relativ til hverandre*/
@@ -556,15 +557,12 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	height: 100%;
 	margin-left: 8%;
 	padding-bottom: 40px;
+	float: none;
 	}
 
 	#info{/*flytter infoboks til høyre på siden*/
 	width: 80%;
 	margin: 10px 80px 100px 0px;
-	}
-
-	#infotekst{
-    font-size: 14px;
 	}
 }
 /* bare telefon */
@@ -597,9 +595,6 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	footer{
 		height: 100px; 
 	}
-	p{
-		font-size: 14px;
-	}
 	/* Om oss*/
 	#personer {/*plasserer boksen med alle personene i*/
 	width: 80%;
@@ -614,7 +609,7 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	}
 
 	#infotekst{
-    font-size: 14px;
+    font-size: 28px;
 	}
 
 }
