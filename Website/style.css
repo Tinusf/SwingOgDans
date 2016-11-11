@@ -336,6 +336,7 @@ h2:before, h2:after {/*styler før og etter h2*/
 	margin: 10% auto;
 	padding: 20px;
 	width: 60%;
+    padding-bottom: 40px;
 }
 
 #close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9 {/*styler close-knappen*/
@@ -357,6 +358,23 @@ h2:before, h2:after {/*styler før og etter h2*/
 .modal-content{/*styler selve innholdet*/
 	width: 90%;
 	margin: 30px auto;
+}
+
+.navn{
+    margin-bottom: 10px;
+    color: #3C9AA5;
+}
+
+.verv{
+    margin-bottom: 20px;
+    color: #3C9AA5;
+}
+
+.popImg{
+    float: right;
+    height: 25%;
+    width: 25%;
+    margin-left: 20px;
 }
 
 /*
