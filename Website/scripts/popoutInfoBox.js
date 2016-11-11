@@ -1,3 +1,9 @@
+/*
+FILE NAME: popoutInfoBox.js
+WRITTEN BY: Hedda Nikolaisen Holmen
+WHEN: Oktober 2016
+PURPOSE: Popper opp en boks med informasjon om personen når man trykker på bildet.  
+*/
 let popoutBox1 = document.getElementById('popoutBox1'); //henter id fra html dokumentet
 
 document.getElementById('knapp1').addEventListener("click", openBox1); //kjører funksjonen når boksen blir klikket

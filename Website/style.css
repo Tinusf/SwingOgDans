@@ -201,8 +201,11 @@ Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
 	border: #3C9AA5 3px solid;
 }
 
-
-/* Om oss */
+/*OM OSS
+WRITTEN BY: Hedda Nikolaisen Holmen
+WHEN: Oktober 2016
+PURPOSE: Få bildene til venstre på siden og teksten til høyre. Hovereffekt på bildene. 
+*/
 #content{/*bredde på siden*/
 	width: 100%;
 	margin: 0 auto;
@@ -215,6 +218,14 @@ Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
 	font-weight: bold;
 	margin-top: 60px;
 	margin-bottom: 60px;
+}
+
+#infotekst{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    color: darkgrey;
+    font-size: 10px;
 }
 
 #info{/*flytter infoboks til høyre på siden*/
