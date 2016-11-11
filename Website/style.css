@@ -414,9 +414,8 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		float:left;
 		margin-left: 2%;
 	}
-    
 	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
-	 font-size: 30px;
+		font-size: 30px;
 	}
 }
 
@@ -515,6 +514,9 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
+		font-size: 30px;
+	}
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
@@ -608,14 +610,14 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 	opacity:0.8;
 }
 
-/* posisjonerer "musicPrev"-knapp absolute og til venstre av musikk siden*/
+/* posisjonerer "musicPrev"-knapp fixed og til venstre av musikk siden*/
 #musicPrev{
 	position: fixed;
 	left: 0px;
 	top: 300px;
 }
 
-/* posisjonerer "musicNext"-knapp absolute og til høyre av musikk siden*/
+/* posisjonerer "musicNext"-knapp fixed og til høyre av musikk siden*/
 #musicNext{
 	position: fixed;
 	right: 0px;
