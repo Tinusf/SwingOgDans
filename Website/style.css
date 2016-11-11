@@ -225,7 +225,7 @@ PURPOSE: Få bildene til venstre på siden og teksten til høyre. Hovereffekt p�
     text-align: center;
     margin-bottom: 30px;
     color: darkgrey;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #info{/*flytter infoboks til høyre på siden*/
