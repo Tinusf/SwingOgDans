@@ -51,30 +51,31 @@ footer > ul > li{ /* gjøre de tre li elementene fine */
 }
 /* Cover og Navbar
 WRITTEN BY: Tinus Flagstad
-Lage en navbar som ser fin ut både på mobil og desktop.
+Lage en navbar som ser fin ut både på mobil og desktop. Mye av CSSen her blir også brukt til
+treningsbaren på treninger og english-sidene.
 */
 #cover {
 	width: 100%;
 }
 
-#navbarID {
+#navbarID, #treningList { 
 	list-style-type: none; /* vil ikke ha vanlig boks ved navbaren */
 	overflow: hidden;
 	background-color: #3C9AA5;
 	margin-top:-7px;
 	margin-bottom: 20px; /* vil ha litt plass under navbaren før det kommer andre ting. */
 }
-ul.navbarClass li {
+ul.navbarClass li, #treningList li {
 	float: left; /* Så navbaren blir horisontal og ikke vertikal. */
 }
-ul.navbarClass li a {
+ul.navbarClass li a, #treningList li a {
 	display: inline-block; /* Så knappene blir større uten å gjøre teksten større.*/
 	color: black;
 	padding: 14px 16px; /* mellomrom mellom knappene */
 	text-decoration: none; /* fjerne streken under ordene */
 	transition: 0.4s; /*hvor lang tid det tar for knapper på navbaren til å få en hvit-ish farge når du hooverer over dem*/
 }
-ul.navbarClass li a:hover, #current {
+ul.navbarClass li a:hover, #current, #treningList li a:hover, .current {
 	background-color: #F3EBD7;
 }
 ul.navbarClass li.icon {
@@ -172,6 +173,32 @@ questions of the faq */
 #faqID #a8 ul{
 	margin-left: 5%;
 	list-style-type: square;
+}
+
+/*TRENING
+WRITTEN BY: Morten & Tinus Flagstad
+WHEN: September 2016
+PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til høyre.
+Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
+*/
+#treningInfo {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left:15%;
+}
+#treningList { /* jeg bruker samme css som navbar til treningsbaren bortsett fra dette. Fordi jeg vil ha den tynnere.*/
+	margin-left:15%;
+	margin-right:15%;
+}
+#treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
+	font-size: 1.5em;
+	float: none;
+	text-align: center;
+	margin: 2%;
+}
+#treningsTekst {
+	padding: 5%;
+	border: #3C9AA5 3px solid;
 }
 
 
@@ -387,12 +414,8 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		float:left;
 		margin-left: 2%;
 	}
-    
-	#mazeMapIframe {
-	 margin-top: 5%; /* litt ekstra plass over mazemappet på trening og english. */
-	}
 	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
-	 font-size: 30px;
+		font-size: 30px;
 	}
 }
 
@@ -426,6 +449,7 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		text-align: left; /* tekst skal være blokk og gå mot venstre, ikke i midten lenger */
 	}
 	#floatLeft {
+		margin-bottom: 5%;
 		margin-left: 5%;
 		width: 90%;
 	} /* Dette er på index.html (hjem-siden) og her kommer facebook-feed under velkomsttekst istedenfor ve siden av hverandre. */
@@ -485,17 +509,22 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		float: none;
 		margin-bottom: 2%;
 	}
+	/* gjøre margin mindre på treningssiden*/
+	#treningList, #treningInfo {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
+		font-size: 30px;
+	}
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	#navbarMenuBtn { /* Denne størrelsen passer best med de fleste mobilbrowsere. */
-		font-size: 41px;
-	}
-	p, article, .navbarClass, li, footer, table { /* større tekst på mobil */
+	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	#split3Middle > div {
@@ -553,18 +582,18 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 #musicBox1{
 	padding: 2%;
-	margin-left: 5%;
+	margin-left: 8%;
 }
 
 #musicBox2{
 	padding: 2%;
-	margin-left: 5%;
+	margin-left: 8%;
 }
 
 #musicBox3{
 	padding: 2%;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 8%;
+	margin-right: 8%;
 }
 
 /* styling av knapper */
@@ -581,53 +610,16 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 	opacity:0.8;
 }
 
-/* posisjonerer "musicPrev"-knapp absolute og til venstre av musikk siden*/
+/* posisjonerer "musicPrev"-knapp fixed og til venstre av musikk siden*/
 #musicPrev{
-	position:absolute;
+	position: fixed;
 	left: 0px;
 	top: 300px;
 }
 
-/* posisjonerer "musicNext"-knapp absolute og til høyre av musikk siden*/
+/* posisjonerer "musicNext"-knapp fixed og til høyre av musikk siden*/
 #musicNext{
-	position:absolute;
+	position: fixed;
 	right: 0px;
 	top: 300px;
-}
-
-
-/*TRENING
-WRITTEN BY: Morten & Tinus Flagstad
-WHEN: September 2016
-PURPOSE: 
-*/
-#treningInfo {
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left:15%;
-}
-#treningList {
-	margin: 0 15%;
-	list-style-type: none;
-	overflow: hidden;
-	background-color: #3C9AA5;
-	text-align: center;
-}
-#treningList li {
-	float: left; /*lage en liten horisontal navbar for alle trenings-dagene. */
-	margin: 2%; 
-}
-#treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
-	float: none;
-}
-#treningList li a{
-	text-align: center;
-	text-decoration: none;
-}
-#treningList li a:active { /* Linken endrer farge når du trykker på den så du kan vite at du trykket på den. */
-	color: #F3EBD7;
-}
-#treningsTekst {
-	padding: 5%;
-	border: #3C9AA5 3px solid;
 }
