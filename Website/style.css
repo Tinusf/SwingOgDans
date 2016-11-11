@@ -376,6 +376,8 @@ h2:before, h2:after {/*styler før og etter h2*/
     width: 25%;
     margin-left: 20px;
     margin-bottom: 20px;
+    max-height: 130px;
+    max-width: 130px;
 }
 
 /*
