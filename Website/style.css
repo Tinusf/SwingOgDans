@@ -548,6 +548,21 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	footer{
 		height: 100px; 
 	}
+	p{
+		font-size: 14px;
+	}
+	/* Om oss*/
+	#personer {/*plasserer boksen med alle personene i*/
+	width: 80%;
+	height: 100%;
+	margin-left: 8%;
+	padding-bottom: 40px;
+	}
+
+	#info{/*flytter infoboks til høyre på siden*/
+	width: 80%;
+	margin: 10px 80px 100px 0px;
+	}
 }
 /* Eksterne kurs */
 #kurs1, #kurs2 {
@@ -598,8 +613,8 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 /* styling av knapper */
 #musicPrev, #musicNext{
-	opacity:0.4;
-	background-color: lightgrey;
+	opacity:0.6;
+	background-color: #3C9AA5;
 	padding: 30px 20px;
 	border:none;
 	border-radius: 5px;
@@ -614,12 +629,12 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 #musicPrev{
 	position: fixed;
 	left: 0px;
-	top: 300px;
+	top: 50%;
 }
 
 /* posisjonerer "musicNext"-knapp fixed og til høyre av musikk siden*/
 #musicNext{
 	position: fixed;
 	right: 0px;
-	top: 300px;
+	top: 50%;
 }
