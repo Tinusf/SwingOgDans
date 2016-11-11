@@ -567,13 +567,16 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+	article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
 		font-size: 2em;
 	}
 
+	p{
+		font-size: 20px;
+	}
 	#split3Middle > div {
 		font-size: 40px;
 	}
