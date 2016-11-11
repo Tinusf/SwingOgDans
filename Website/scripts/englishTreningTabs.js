@@ -2,12 +2,7 @@
 FILE NAME: englishTreningTabs.js
 WRITTEN BY: Kode originalt skrevet av Tinus/Morten, men tilpasset til "english" nettsiden av Ebba Fingarsen
 WHEN: September 2016
-<<<<<<< HEAD
 PURPOSE: Endre teksten i table elementet i treninger.html og treningsteksten (p). 
-=======
-PURPOSE: Endre teksten i table elementet i treninger.html og treningsteksten (p).
->>>>>>> cc58906fa681358b877bb79ebcf1f250007f091d
-*/
 
 /* Henter inn treningslistene med id og lagrer de som konstanter. */
 const treningList1 = document.getElementById("treningList1");
