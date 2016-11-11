@@ -449,6 +449,7 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		text-align: left; /* tekst skal være blokk og gå mot venstre, ikke i midten lenger */
 	}
 	#floatLeft {
+		margin-bottom: 5%;
 		margin-left: 5%;
 		width: 90%;
 	} /* Dette er på index.html (hjem-siden) og her kommer facebook-feed under velkomsttekst istedenfor ve siden av hverandre. */
