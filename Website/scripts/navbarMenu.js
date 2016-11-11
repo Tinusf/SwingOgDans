@@ -5,11 +5,12 @@ WHEN: September 2016
 PURPOSE: Den første funnksjonen "navBarMenu" bytter bare klassen til navbarID så jeg vet om den skal være responsiv eller ikke. Denne bytter jo annenhver gang. 
 Den andre funksjonen "createNavBar" lager navbaren på hver side før footerwrappern som er på alle
 sider. Og den siste funksjonen "createCover" lager en a element og img element for coverbildet.
+Fikk inspirasjon til navbaren på http://www.w3schools.com/css/css_navbar.asp.
 */
 
 createCover(); //først lager jeg coverbildet før footerwrapper.
 createNavBar(); //så navbar under coverbildet men før footerwrapper den og.
-createFooter(); // så lager jeg footer etter footerwrapp.er
+createFooter(); // så lager jeg footer etter footerwrapper.
 
 
 function navBarMenu() {
@@ -123,8 +124,8 @@ function createCover() {
 		img.src="images/cover.jpg"; //fordi hjemsiden har større bildet enn de andre.
 	}
 	else {
-		img.src="images/coverSmall.jpg"
+		img.src="images/coverSmall.jpg" //alle andre sider har den lille coverbildet.
 	}
 	a.appendChild(img);
-	document.body.insertBefore(a, footerWrapper);
+	document.body.insertBefore(a, footerWrapper); //setter den inn før footer-divven.
 }
