@@ -580,18 +580,18 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 #musicBox1{
 	padding: 2%;
-	margin-left: 5%;
+	margin-left: 8%;
 }
 
 #musicBox2{
 	padding: 2%;
-	margin-left: 5%;
+	margin-left: 8%;
 }
 
 #musicBox3{
 	padding: 2%;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 8%;
+	margin-right: 8%;
 }
 
 /* styling av knapper */
