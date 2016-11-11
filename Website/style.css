@@ -610,14 +610,14 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 /* posisjonerer "musicPrev"-knapp absolute og til venstre av musikk siden*/
 #musicPrev{
-	position:absolute;
+	position: fixed;
 	left: 0px;
 	top: 300px;
 }
 
 /* posisjonerer "musicNext"-knapp absolute og til høyre av musikk siden*/
 #musicNext{
-	position:absolute;
+	position: fixed;
 	right: 0px;
 	top: 300px;
 }
