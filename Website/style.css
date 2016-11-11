@@ -231,7 +231,7 @@ PURPOSE: Få bildene til venstre på siden og teksten til høyre. Hovereffekt p�
 #info{/*flytter infoboks til høyre på siden*/
 	width: 35%;
 	float: right;
-	margin: 10px 80px 100px 0px;
+	margin: 0px 80px 100px 0px;
 }
 
 #personer {/*plasserer boksen med alle personene i*/
@@ -546,6 +546,22 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
 		font-size: 30px;
 	}
+	/* Om oss*/
+	#personer {/*plasserer boksen med alle personene i*/
+	width: 80%;
+	height: 100%;
+	margin-left: 8%;
+	padding-bottom: 40px;
+	}
+
+	#info{/*flytter infoboks til høyre på siden*/
+	width: 80%;
+	margin: 10px 80px 100px 0px;
+	}
+
+	#infotekst{
+    font-size: 14px;
+	}
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
@@ -592,6 +608,11 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	width: 80%;
 	margin: 10px 80px 100px 0px;
 	}
+
+	#infotekst{
+    font-size: 14px;
+	}
+
 }
 /* Eksterne kurs */
 #kurs1, #kurs2 {
