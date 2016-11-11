@@ -337,6 +337,7 @@ h2:before, h2:after {/*styler før og etter h2*/
 	margin: 10% auto;
 	padding: 20px;
 	width: 60%;
+    padding-bottom: 40px;
 }
 
 #close1, #close2, #close3, #close4, #close5, #close6, #close7, #close8, #close9 {/*styler close-knappen*/
@@ -375,9 +376,12 @@ h2:before, h2:after {/*styler før og etter h2*/
     height: 25%;
     width: 25%;
     margin-left: 20px;
+<<<<<<< HEAD
     margin-bottom: 20px;
     max-height: 130px;
     max-width: 130px;
+=======
+>>>>>>> 8697161e6413083c4abff0d299f95fca481e330b
 }
 
 /*
@@ -569,13 +573,16 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
+	article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
 		font-size: 2em;
 	}
 
+	p{
+		font-size: 20px;
+	}
 	#split3Middle > div {
 		font-size: 40px;
 	}
