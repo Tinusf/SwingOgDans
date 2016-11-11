@@ -191,6 +191,7 @@ Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
 	margin-right:15%;
 }
 #treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
+	font-size: 1.5em;
 	float: none;
 	text-align: center;
 	margin: 2%;
