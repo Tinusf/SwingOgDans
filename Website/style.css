@@ -51,31 +51,30 @@ footer > ul > li{ /* gjøre de tre li elementene fine */
 }
 /* Cover og Navbar
 WRITTEN BY: Tinus Flagstad
-Lage en navbar som ser fin ut både på mobil og desktop. Mye av CSSen her blir også brukt til
-treningsbaren på treninger og english-sidene.
+Lage en navbar som ser fin ut både på mobil og desktop.
 */
 #cover {
 	width: 100%;
 }
 
-#navbarID, #treningList { 
+#navbarID {
 	list-style-type: none; /* vil ikke ha vanlig boks ved navbaren */
 	overflow: hidden;
 	background-color: #3C9AA5;
 	margin-top:-7px;
 	margin-bottom: 20px; /* vil ha litt plass under navbaren før det kommer andre ting. */
 }
-ul.navbarClass li, #treningList li {
+ul.navbarClass li {
 	float: left; /* Så navbaren blir horisontal og ikke vertikal. */
 }
-ul.navbarClass li a, #treningList li a {
+ul.navbarClass li a {
 	display: inline-block; /* Så knappene blir større uten å gjøre teksten større.*/
 	color: black;
 	padding: 14px 16px; /* mellomrom mellom knappene */
 	text-decoration: none; /* fjerne streken under ordene */
 	transition: 0.4s; /*hvor lang tid det tar for knapper på navbaren til å få en hvit-ish farge når du hooverer over dem*/
 }
-ul.navbarClass li a:hover, #current, #treningList li a:hover, .current {
+ul.navbarClass li a:hover, #current {
 	background-color: #F3EBD7;
 }
 ul.navbarClass li.icon {
@@ -389,6 +388,9 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		margin-left: 2%;
 	}
     
+	#mazeMapIframe {
+	 margin-top: 5%; /* litt ekstra plass over mazemappet på trening og english. */
+	}
 	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
 	 font-size: 30px;
 	}
@@ -486,7 +488,6 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-
 	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
@@ -549,18 +550,18 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 #musicBox1{
 	padding: 2%;
-	margin-left: 8%;
+	margin-left: 5%;
 }
 
 #musicBox2{
 	padding: 2%;
-	margin-left: 8%;
+	margin-left: 5%;
 }
 
 #musicBox3{
 	padding: 2%;
-	margin-left: 8%;
-	margin-right: 8%;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 /* styling av knapper */
@@ -602,16 +603,29 @@ PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til h
 	margin-bottom: 2%;
 	margin-left:15%;
 }
-#treningList { /* jeg bruker samme css som navbar til treningsbaren bortsett fra dette. Fordi jeg vil ha den tynnere.*/
-	margin-left:15%;
-	margin-right:15%;
+#treningList {
+	margin: 0 15%;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #3C9AA5;
+	text-align: center;
+}
+#treningList li {
+	float: left; /*lage en liten horisontal navbar for alle trenings-dagene. */
+	margin: 14px 0px; 
 }
 #treningList li:first-child { /* første child er h1'en "trening" så den skal ikke floate. */
 	float: none;
+}
+#treningList li a{
 	text-align: center;
-	margin: 2%;
+	text-decoration: none;
+	padding: 16px;
 }
 #treningsTekst {
 	padding: 5%;
 	border: #3C9AA5 3px solid;
+}
+#treningList li a:hover, .current { /* Hvilken treningsknapp som er trykket på. */
+	background-color: #F3EBD7;
 }
