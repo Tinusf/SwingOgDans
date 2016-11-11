@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <!-- 
 FILE NAME: musikk.html 
 WRITTEN BY: Ebba Fingarsen 
 WHEN: Oktober 2016
 PURPOSE: Tre spillelister fordelt (ved hjelp av div) utover  siden med tilhørende takt over hver spilleliste. To knapper på hver side av siden med funksjon å rullere gjennom spillelistene. Har id ved 3 takter og 3 spillelister for å endres i musicArrow.js
 -->
-<!DOCTYPE html>
 <html lang="no">
 <head>
 	<meta charset="utf-8" />
@@ -14,28 +14,33 @@ PURPOSE: Tre spillelister fordelt (ved hjelp av div) utover  siden med tilhøren
 </head>
 <body>
 	<div id="footerWrapper">
+	<!--
+	"footerWrapper" gir et wrapper element for footern. Ved hjelp av denne kan vi style siden i css slik at footern blir tvunget til bunnen av siden selv i tilfeller hvor siden har lite eller ikke noe innhold. 
+	-->	
 		<button id="musicPrev">&lt;</button>
+		<!-- "musicPrev" er en knapp med unik id som får funkjonen rullere spillelistene ett hakk tilbake i listen med spillelister gjennom musicArrow.js -->
 
-			<div id="musicBoxAll">
+		<!-- musikkbokser: Alle musikkboksene har hver sin unike id slik at den kan bli stylet i css.
+		h2: alle h2 inneholder takter til tilhørende spilleliste. Disse har en unik id for å kunne rulleres på gjennom en funksjon i musicArrow.js
+		iframe: Hver iframe har en unik id for å kunne rulleres på gjennom en funksjon i musicArrow.js
+		-->
+			<div id = musicBox1>
+				<h2 id="musicInfo1"> Swing >110 </h2>
+				<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="380" id="musiciFrame1"></iframe>
+			</div>
 
-				<div id = musicBox1>
-					<h2 id="musicInfo1"> Swing >110 </h2>
-					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6dTjFmqFb2KHZy9f6VPwce" width="300" height="380" id="musiciFrame1"></iframe>
-				</div>
+			<div id = musicBox2>
+				<h2 id="musicInfo2"> Swing 111-120 </h2>
+				<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" id="musiciFrame2"></iframe>
+			</div>
 
-				<div id = musicBox2>
-					<h2 id="musicInfo2"> Swing 111-120 </h2>
-					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:6Nh1LYRncSJRSMhgh6YlBP" width="300" height="380" id="musiciFrame2"></iframe>
-				</div>
-
-				<div id = musicBox3>
-					<h2 id="musicInfo3"> Swing 121-130 </h2>
-					<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" id="musiciFrame3"></iframe>
-				</div>
-
+			<div id = musicBox3>
+				<h2 id="musicInfo3"> Swing 121-130 </h2>
+				<iframe src="https://embed.spotify.com/?uri=spotify:user:andreskr:playlist:1QvfyT3hSLYXMHw1u1Xo5F" width="300" height="380" id="musiciFrame3"></iframe>
 			</div>
 
 		<button id="musicNext">&gt;</button>
+		<!-- "musicNext" er en knapp med unik id som får funkjonen rullere spillelistene ett hakk videre i listen med spillelister gjennom musicArrow.js -->
 	</div>
 	<script src="scripts/musicArrow.js"></script>
 	<script src="scripts/navbarMenu.js"></script>

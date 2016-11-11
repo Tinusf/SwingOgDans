@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
 FILE NAME: english.html 
 WRITTEN BY: Kode fra treninger.html av Tinus Flagstad & Morten, endret og tilpasset av Ebba Fingarsen. Kode fra faq.html av Sigve S. Nordgaard, endret og tilpasset av Ebba Fingarsen.
@@ -5,7 +6,6 @@ WHEN: September 2016
 PURPOSE: Faq delen: Svarer på spørsmål som ofte blir spurt på NTNUI Swing og folkesans siden i en liste med klikkbar tekst og ikoner som kan vise/gjemme svar teksten.
 Practice delen: Har fire knapper du kan trykke på for å vise de forskjellige treningstidene, sted ol. i tillegg til informasjon om selve kurset. Viser også en mazemap over hvor treningen er.
 -->
-<!DOCTYPE html>
 <html lang="no">
 <head>
 	<meta charset="utf-8" />
@@ -14,10 +14,25 @@ Practice delen: Har fire knapper du kan trykke på for å vise de forskjellige t
 	<link rel="icon" href="images/logo.png" type="image/gif" sizes="32x32" />
 </head>
 <body>
-	<div id="footerWrapper">	
+	<div id="footerWrapper">
+	<!--
+	"footerWrapper" gir et wrapper element for footern. Ved hjelp av denne kan vi style siden i css slik at footern blir tvunget til bunnen av siden selv i tilfeller hvor siden har lite eller ikke noe innhold. 
+	-->	
 	<div id="faqWrapper">
+	<!--
+	"faqWrapper" gir et wrapper element for hovedinnholdet for faq delen av siden. Ved hjelp av denne kan vi style elementet med passing i css for å posisjonere innholdet på siden og tilpasse det til marginen på siden.
+	-->
 	<ul  id ="faqID">
+		<!-- 
+		"faqHeader" er en custom id for styling av hoved headern på siden
+		-->
 		<li id="faqHeader">FAQ</li>
+		<!--
+		Hvert spørsmål og svar er basert på tre klasser wich alle gir stil og funksjonalitet:
+		"question" - Når den klikkes kjøres en javascript-kode som viser eller skjuler "answer".
+		"pluss" - er en underklasse av spørsmål for å også gjøre det klikkbart. Den er alltid plassert til høyre for spørsmålene og blir tilpasset iforhold til skjermen.
+		"answer" - Inneholder svaret på spørsmålet som som vises og skjules når "question" blir klikket.
+		-->
 		<li class="question" onclick="textClick('a1','b1')">Do I need a partner in order to participate?
 			<div class="pluss" id="b1">+</div>
 		</li>
@@ -85,13 +100,15 @@ Practice delen: Har fire knapper du kan trykke på for å vise de forskjellige t
 
 	<ul id="treningList">
 	<li><h1>PRACTICE</h1></li>
-	<li><a href="javascript:void(0)" id="treningList1">Wednesday</a></li>
+	<!-- Knapper som kjører script, ikke link til noe annet. Klassen current har bakgrunnsfarge. -->
+	<li><a href="javascript:void(0)" id="treningList1" class="current">Wednesday</a></li>
 	<li><a href="javascript:void(0)" id="treningList2">Sunday Swing</a></li>
 	<li><a href="javascript:void(0)" id="treningList3">Sunday Folkedance</a></li>
 	<li><a href="javascript:void(0)" id="treningList4">Sunday Free-dance</a></li>
 	</ul>
 
 	<table id="treningInfo">
+	<!-- Lager et table for informasjon om treninger som blir endret i treningTabs.js-->
 		<tr>
 			<td><b>TIME:</b></td>
 			<td id="treningsTid">20.15-22.00</td>
@@ -109,7 +126,8 @@ Practice delen: Har fire knapper du kan trykke på for å vise de forskjellige t
 			<td id="treningsInngang">Free (requires SiT and NTNUI membership)</td>
 		</tr>
 	</table>
-	
+
+	<!-- mazemap og facebook-api har samme ID på div'en rundt, det gjør at vi unngår å kopiere kode når de er ganske like -->
 	<div id="floatRight">
 		<iframe width="500" height="420" src="http://use.mazemap.com/embed.html?v&#x3D;1&amp;campusid&#x3D;1&amp;left&#x3D;10.4005&amp;right&#x3D;10.4087&amp;top&#x3D;63.4220&amp;bottom&#x3D;63.4197&amp;sharepoitype&#x3D;poi&amp;sharepoi&#x3D;606&amp;utm_medium&#x3D;iframe" id="mazeMapIframe"></iframe>
 	</div>
