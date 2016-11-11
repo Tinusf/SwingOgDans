@@ -40,7 +40,7 @@ treningList3.addEventListener("click", function() {
 	treningsTid.innerHTML="20.00 – 22.00";
 	treningsKurs.innerHTML = "Folkedans (Alle)";
 	treningsSted.innerHTML = "Idrettsbygget Gløshaugen Kjellersalen";
-	treningsTekst.innerHTML = "Har du lyst til å lære deg norsk folkedans? Eller har du danset før, men savner noen å danse med? Alle er velkommne, uansett nivå 🙂 <br>Vi har hovedfokus på reinlender, vals, pols og halling, men i løpet av semesteret kan vi i tillegg komme innom springar, polka, tango og mye annet artig! <br>Vi legger vekt på å lære bort det å føre og å følge, som er essensielt i all pardans. Folkedanstreningene kan derfor også være et nyttig supplement for de som driver med andre danser. Vi reiser også gjerne sammen på dansekvelder i Trondheimsområdet og arrangerer felles turer til Rørosmartnan og Hilmarfestivalen..Kalender";
+	treningsTekst.innerHTML = "Har du lyst til å lære deg norsk folkedans? Eller har du danset før, men savner noen å danse med? Alle er velkommne, uansett nivå <br>Vi har hovedfokus på reinlender, vals, pols og halling, men i løpet av semesteret kan vi i tillegg komme innom springar, polka, tango og mye annet artig! <br>Vi legger vekt på å lære bort det å føre og å følge, som er essensielt i all pardans. Folkedanstreningene kan derfor også være et nyttig supplement for de som driver med andre danser. Vi reiser også gjerne sammen på dansekvelder i Trondheimsområdet og arrangerer felles turer til Rørosmartnan og Hilmarfestivalen..Kalender";
 	clearClasses();
 	treningList3.className ="current";
 });

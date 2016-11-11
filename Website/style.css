@@ -201,8 +201,11 @@ Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
 	border: #3C9AA5 3px solid;
 }
 
-
-/* Om oss */
+/*OM OSS
+WRITTEN BY: Hedda Nikolaisen Holmen
+WHEN: Oktober 2016
+PURPOSE: Få bildene til venstre på siden og teksten til høyre. Hovereffekt på bildene. 
+*/
 #content{/*bredde på siden*/
 	width: 100%;
 	margin: 0 auto;
@@ -217,10 +220,18 @@ Mye av CSSen er gjenbrukt av det jeg har på navbar 100 linjer over.
 	margin-bottom: 60px;
 }
 
+#infotekst{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    color: darkgrey;
+    font-size: 12px;
+}
+
 #info{/*flytter infoboks til høyre på siden*/
 	width: 35%;
 	float: right;
-	margin: 10px 80px 100px 0px;
+	margin: 0px 80px 100px 0px;
 }
 
 #personer {/*plasserer boksen med alle personene i*/
@@ -348,6 +359,24 @@ h2:before, h2:after {/*styler før og etter h2*/
 	margin: 30px auto;
 }
 
+.navn{
+    margin-bottom: 10px;
+    color: #3C9AA5;
+}
+
+.verv{
+    margin-bottom: 20px;
+    color: #3C9AA5;
+}
+
+.popImg{
+    float: right;
+    height: 25%;
+    width: 25%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 /*
 Kontakt oss 
 WRITTEN BY: Tinus Flagstad 
@@ -381,6 +410,10 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	WHEN: September 2016
 	PURPOSE: få de tre div'ene på kontakt til å scale riktig på desktop(altså stort vindu).
 	*/
+	.avmelding{
+		list-style:none;
+	}
+
 	#split3Left {
 		margin-left: 15%;
 		float: left;
@@ -517,6 +550,22 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	#musicPrev, #musicNext{ /* gjøre knappene 30px på desktop */
 		font-size: 30px;
 	}
+	/* Om oss*/
+	#personer {/*plasserer boksen med alle personene i*/
+	width: 80%;
+	height: 100%;
+	margin-left: 8%;
+	padding-bottom: 40px;
+	}
+
+	#info{/*flytter infoboks til høyre på siden*/
+	width: 80%;
+	margin: 10px 80px 100px 0px;
+	}
+
+	#infotekst{
+    font-size: 14px;
+	}
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
@@ -548,6 +597,26 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	footer{
 		height: 100px; 
 	}
+	p{
+		font-size: 14px;
+	}
+	/* Om oss*/
+	#personer {/*plasserer boksen med alle personene i*/
+	width: 80%;
+	height: 100%;
+	margin-left: 8%;
+	padding-bottom: 40px;
+	}
+
+	#info{/*flytter infoboks til høyre på siden*/
+	width: 80%;
+	margin: 10px 80px 100px 0px;
+	}
+
+	#infotekst{
+    font-size: 14px;
+	}
+
 }
 /* Eksterne kurs */
 #kurs1, #kurs2 {
@@ -598,8 +667,8 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 
 /* styling av knapper */
 #musicPrev, #musicNext{
-	opacity:0.4;
-	background-color: lightgrey;
+	opacity:0.6;
+	background-color: #3C9AA5;
 	padding: 30px 20px;
 	border:none;
 	border-radius: 5px;
@@ -614,12 +683,12 @@ PURPOSE: få de tre busikkboksene til å være vesiden av hverandre på midten a
 #musicPrev{
 	position: fixed;
 	left: 0px;
-	top: 300px;
+	top: 50%;
 }
 
 /* posisjonerer "musicNext"-knapp fixed og til høyre av musikk siden*/
 #musicNext{
 	position: fixed;
 	right: 0px;
-	top: 300px;
+	top: 50%;
 }
