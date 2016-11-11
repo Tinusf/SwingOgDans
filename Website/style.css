@@ -488,14 +488,11 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 }
 /* bare telefon */
 @media only screen and (max-device-width : 940px){
-	#navbarMenuBtn { /* Denne størrelsen passer best med de fleste mobilbrowsere. */
-		font-size: 41px;
-	}
-	p, article, .navbarClass, li, footer, table { /* større tekst på mobil */
+	p, article, .navbarClass, li, footer, table, #navbarMenuBtn { /* større tekst på mobil */
 		font-size: 48px;
 	}
 	h1,h2,h2, #tittel, #faqHeader {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 
 	#split3Middle > div {
@@ -623,10 +620,7 @@ PURPOSE: Få list (knappene) over tabelen (treningsInfo) og få mazemappet til h
 #treningList li a{
 	text-align: center;
 	text-decoration: none;
-	padding: 14px 16px;
-}
-#treningList li a:active { /* Linken endrer farge når du trykker på den så du kan vite at du trykket på den. */
-	color: #F3EBD7;
+	padding: 16px;
 }
 #treningsTekst {
 	padding: 5%;
