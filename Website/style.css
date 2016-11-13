@@ -393,6 +393,27 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 	border: 2px solid #3C9AA5;
 }
 
+/* Eksterne kurs */
+#kurs1, #kurs2 {
+	text-align: center;
+	padding: 2% 0;
+	width: 40%;
+	height: 20%;
+	border: 4px dashed lightblue; 
+}
+
+#eksternTittel {
+	text-align: center;
+	padding: 20px;
+}
+#boxes {
+	padding-top: 20px;
+}
+#tekst1 {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
 /* Større desktop vindu */
 @media only screen and (min-width : 940px){
 	/* hjem 
@@ -545,6 +566,7 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
 		margin-right: 0;
 		float: none;
 		margin-bottom: 2%;
+		width: 60%;
 	}
 	/* gjøre margin mindre på treningssiden*/
 	#treningList, #treningInfo {
@@ -619,26 +641,6 @@ PURPOSE: lage bokser i boksen i midten på kontakt-siden.
     font-size: 28px;
 	}
 
-}
-/* Eksterne kurs */
-#kurs1, #kurs2 {
-	text-align: center;
-	padding: 2% 0;
-	width: 40%;
-	height: 20%;
-	border: 4px dashed lightblue; 
-}
-
-#eksternTittel {
-	text-align: center;
-	padding: 20px;
-}
-#boxes {
-	padding-top: 20px;
-}
-#tekst1 {
-	margin-left: 15%;
-	margin-right: 15%;
 }
 
 /*Musikk
